@@ -1,0 +1,37 @@
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ 
+ 
+ .div1 {
+    background-color: cadetblue;
+    width: 300px;
+    height: 200px;
+    /*overflow: scroll*/
+    /*overflow:visible;*/
+    /*overflow:scroll;*/
+    overflow:auto;
+}
+
+.div2 {
+    background-color: greenyellow;
+    width: 300px;
+    height: 250px;
+}
+
+.div2 p {
+    /*font-size: larger;*/
+    font-size: 22px;
+    /*text-align: right;*/
+    text-align: justify;
+    text-align-last: right;
+}
+
+/* Kontejner sirine 500px visine 400px,pozadina boja po zelji , neka se nalazi
+naslov velicine h2 boje bordo i paragraf od 60 karaktera,boje tamno plave,p treba biti poravnat, treba biti centriran neka bude podesen overflowauto na kontejener, treba imati classu main.
+Velicina slova da bude 20px*/
+
+
+
+

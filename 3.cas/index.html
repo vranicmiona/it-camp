@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+    <h1 align="center">Danas radimo forme</h1>
+    <!--Koristimo za unosene podatke i sifre,kontakt sa korisnicima.Na kraju imamo log in.FORME,ACTION nam ukazuje da odemo na drugu str i on je povezan sa tagom button-->
+    <form action="./index2.html" target="_blank" align="center">
+        <label for="username">Unesite vas username:</label>
+        <input type="text" name="username" id="username" placeholder="Username" required><br><br>
+
+        <label for="email">Unesite vasu email adresu:</label>
+        <input type="text" name="email" id="email" placeholder="Email" required><br><br>
+
+        <label for="pass">Unesite lozinku:</label>
+        <input type="password" name="password" id="pass" placeholder="Password" required><br><br>
+        <label for="age">Unesite starost:</label>
+        <input type="number" name="age" id="age" min="15" max="120" step="3"><br><br>
+        <label for="birthdate">Unesite datum rodjenja:</label>
+        <input type="date" name="birthdate" id="birthdate" min="1950-01-01" max="2015-12-13"><br><br>
+        Omiljeno voce:<br>
+        <label for="banana">Banana</label>
+        <input type="checkbox" name="banana" id="banana"><br><br>
+        <label for="jagode">Jagode</label>
+        <input type="checkbox" name="jagode" id="jagode" checked><br>
+        <label for="ananas">Ananas</label>
+        <input type="checkbox" name="ananas" id="ananas"><br><br>
+        Pol: <br>
+        <label for="man">M</label>
+        <input type="radio" name="gender" id="man" value="man">
+        <label for="woman">W</label>
+        <input type="radio" name="gender" id="woman" value="woman">
+        <!--radio tag nam omogucuje da nam jedna bude cekirana a druga ne.Value se povezuje sa id da bi prepoznali kasnije na stranici-->
+        <label for="note">Napomena:</label>
+        <textarea name="note" id="note" cols="8" rows="5"></textarea><br><br>
+        
+        <label for="file">Unesite zeljenu datoteku:</label>
+        <input type="file" name="datoteka" id="file"><br><br>
+        <label for="phone">Unesite broj telefona:</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+        <label for="color">Unesite omiljenu boju:</label>
+        <input type="color" name="color" id="color">
+
+        <label for="eyeColor">Unesite boju ociju:</label>
+        <select type="EyeColor" id="eyeColor">
+            <option value="Zelena">Zelena</option>
+            <option value="Braon">Braon</option>
+            <option value="Roze">Roze</option>
+            <option value="Plava">Plava</option>
+            <option value="Crna" selected>Crna</option>
+        </select><br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button><br><br>
+    </form>
+    <!--INPUT ukazuje da nisu tacno uneti podaci korisnika-->
+    <!--TYPE nas vodi na drugi file-->
+    <!--INPUT:-->
+</body>
+</html>

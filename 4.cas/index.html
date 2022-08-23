@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" align="center" target="_blank">
+        <label for="username">Unesite vas username:</label>
+        <input type="text" name="username" id="username" placeholder="Username" required><br><br>
+        <label for="email">Unesite vas email:</label>
+        <input type="text" name="email" id="email" placeholder="Email" required><br><br>
+        <label for="pass">Unesite vasu lozinku:</label>
+        <input type="password" name="password" id="pass" placeholder="Password" required><br><br>
+        <label for="birthdate">Unesite vas datum rodjenja:</label>
+        <input type="date" name="birthdate" id="birthdate" min="1950-01-01" max="2060-31-12"><br><br>
+        <label for="age">Unesite vas broj godina:</label>
+        <input type="number" name="age" id="age" min="13" max="120" step="4"><br><br>
+        Da li se slazete sa uslovima:<br>
+        <label for="da">DA</label>
+        <input type="checkbox" name="da" id="da" required checked>
+        <label for="ne" >NE</label>
+        <input type="checkbox" name="ne" id="ne" rquired><br><br>
+        
+        <label for="men">M</label>
+        <input type="radio" name="gender" id="man" value="men">
+        <label for="woman">W</label>
+        <input type="radio" name="gender" id="woman" value="woman"><br><br>
+        <label for="note">Napomena:</label>
+        <textarea name="note" id="note" rows="15" cols="30">Text</textarea><br><br>
+        <button type="set">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

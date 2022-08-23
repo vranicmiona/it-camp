@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background:aquamarine">
+    
+    <table border="1px" solid black; style="background:gray";>
+        <form action="http://127.0.0.1:5500/5.cas/index4.html" align="center" target="_blank">
+        <tr>
+            <td align="center">
+                <label for="username">Unesite svoj username:</label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <label for="email">Unesite svoj email:</label>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <label for="pass">Unesite svoju lozinku:</label>
+                <input type="password" name="password" id="pass" placeholder="Password" required>
+            </td>
+        </tr>
+        <tr>  
+            <td align="center">
+                <label for="age">Unesite svoj broj godina:</label>
+                <input type="number" name="age" id="age" min="15" max="120" step="3" placeholder="Age">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <label for="birthdate">Unesite svoj datum rodjenja:</label>
+                <input type="date" name="birthdate" id="birthdate" min="1972-01-01" max="2042-31-12">
+            </td>
+        </tr>  
+        <tr>
+            <td align="center">
+                <label for="men">M</label>
+                <input type="radio" name="gender" id="men" value="men">
+                <label for="woman">W</label>
+                <input type="radio" name="gender" id="woman" value="woman">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button></td>    
+            
+        </tr>
+        </form>
+    </table><br><br><br><br><br>
+
+    <table border="1px" solid black; style="background:pink;">
+        <form action="https://www.w3schools.com/" align="center" target="_blank">
+            <tr>
+                <td align="center">Unesite svoj username:</td>
+                <td>
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Unesite svoj email:</td>
+                <td>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Unesite svoju lozinku:</td>
+                <td>
+                    <label for="pass"></label>
+                    <input type="password" name="password" id="pass" placeholder="Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Unesite broj godina:</td>
+            <td>
+                <label for="age"></label>
+                <input type="number" name="age" id="age" placeholder="Age" required>
+            </td>
+            <tr>
+                <td align="center">Unesite svoj datum rodjenja:</td>
+                <td>
+                    <label for="birthdate"></label>
+                    <input type="date" name="birthdate" id="birthdate">
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td align="center">Unesite pol:</td>
+                <td>
+                    <label for="men">M</label>
+                    <input type="radio" name="gender" id="men" value="men">
+                    <label for="woman">W</label>
+                    <input type="radio" name="gender" id="woman" value="woman">
+                </td>
+                <tr>
+                    <td align="centr">Da li se slazete sa uslovima sajta?</td>
+                <td>
+                    <label for="da">DA</label>
+                    <input type="checkbox" name="da" id="da" required checked>
+                    <label for="ne">NE</label>
+                    <input type="checkbox" name="ne" id="ne" requied>
+                </td>
+            <tr>
+                <td align="center" colspan="2">
+                    <button type="reset" align="center">Reset</button>
+                    <button type="submit" align="center">Submit</button>
+                </td>
+            </tr>
+        </form>
+  
+</body>
+</html>

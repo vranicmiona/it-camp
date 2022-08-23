@@ -1,0 +1,84 @@
+
+*{
+    margin:0px;
+}
+
+.main {
+    border:2px solid #1037e2;
+    width:400px;
+    height:600px;
+    background-color: #55e9ee7c;
+    border-radius: 25px;
+    margin: 15px auto;
+    box-shadow: #0c10e69a 0px 54px 55px, rgba(81, 104, 236, 0.12) 0px -12px 30px, rgba(36, 40, 231, 0.12) 0px 4px 6px, rgba(9, 50, 231, 0.17) 0px 12px 13px, rgba(51, 54, 230, 0.09) 0px -3px 5px;
+    display: inline-block;
+    
+
+    }
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+    border-radius: 25px 25px 0px 0px;
+    height: 33%;
+   
+}
+img:hover{
+    content:url(./ATP2.png);
+   
+}
+
+.main h1{
+    margin-top: 15px;
+    text-align: center;
+    text-align-last: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main h3 {
+    margin:30px 15px 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.main p {
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 30px;
+    text-align-last: center;
+    }
+
+.main p:hover {
+    background-color: darkslategrey;
+    color:greenyellow;
+    transition: all 2s ease-in-out;
+    transition-delay: 3ms;
+    transition-duration: 5s;
+    /*transition: all 2s ease-in-out; -text se pojavljuje i menja mu se boja u roku od 2s.*/
+}
+.main + p{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+}
+
+/*.main {
+    1.text-transform:uppercase;
+    2.object-fit: cover; koristi nam za sliku da je ne razvuce ali je ipak slika zadrzala svoj pocetan oblik: 
+    3.text-transform: capitalize;
+    4.text-transform:lowercase;*/
+    /*3.koristi nam da se povecaju slova ali samo prvo pocetno od svake reci*/
+    /*4.koristi nam da */
+
+   /* .paragraf 
+        width:200px;
+        display: inline;
+   */
+   /*stacoverflow-sajt za pitanja koje najcesce koriste programeri*/
+
+
+
+
+

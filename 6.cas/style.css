@@ -1,0 +1,24 @@
+h1 {
+    color: rgb(208, 241, 21);
+}
+
+
+.main h1 {
+    color:rgb(52, 165, 42);
+}
+
+.main > p {
+    color: blue;
+}
+/*Plus predstavlja prvi element nakon diva,a ne svaki sledeci.Oboji je samo prvi pargraf,a ne i drugi p.*/
+div + p {
+    color:darkred;
+}
+/*Ako nekom html tagu dodelimo class-u i id i primenimo stilove koji nisu isti, prednost primene ima id u odnosu na class-u.*/
+#childdiv {
+    background-color: aqua;
+}
+.childdivclass {
+    background-color: pink;
+}
+
