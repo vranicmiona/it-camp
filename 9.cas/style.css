@@ -1,0 +1,43 @@
+* {
+    margin:0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.put {
+    width:100%;
+    height:60px;
+    background-color: #ff1493;
+
+}
+
+.put a {
+    float:left;
+    display: block;
+    text-align:center;
+    color:#f3f3ed;
+    padding: 15px 20px;
+    font-size: 17px;
+    text-decoration: none;
+    
+}
+
+.put a:hover{
+    color:#000000;
+    background-color:#ddd ;
+}
+
+.put a.active{
+    color: #ffffff;
+    background-color: #3737e4;
+}
+
+.put input[type=text]{
+    float:right;
+    padding:15px 20px;
+    margin:8px 16px;
+    border: none;
+    font-size: 15px;
+    
+}
+
+
