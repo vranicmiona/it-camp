@@ -1,0 +1,47 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color:#6fd3f1;
+}
+.main {
+    width:400px;
+    height: 600px;
+    border-top-left-radius: 50px;
+    border-top-right-radius:50px;
+    background-color: #1c335c;
+    color:antiquewhite;
+    margin:20px auto;
+    border: 3px double #60e060;
+    box-shadow:3px 3px 3px 3px #60e060;
+}
+.main h1{
+    margin:5px; 
+    padding:10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main h3{
+    margin:10px;
+    padding:5px;
+}
+img {
+    width:400px;
+    height:200px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.text-for-icons{
+    padding-left: 3px;
+}
+#icons{
+    
+    padding:10px 15px;
+    color:#05c905;
+}
+#icons:hover{
+    color:antiquewhite;
+    background-color: #05c905;
+}
+.text-for-icons:hover{
+    color:#1c335c;
+    background-color: antiquewhite;
+}
