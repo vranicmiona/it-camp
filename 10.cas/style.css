@@ -1,0 +1,50 @@
+body{
+    /*font-family: 'Kalam', cursive; *//*1. nacin primene fontova*/
+}
+/*2. nacin primenei fontova*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.main {
+    margin:20px auto;
+    padding: 15px;
+    width:400px;
+    height:500px;
+    background-color: aqua;
+}
+.main h1 {
+    text-indent:5px;
+    text-align: justify;
+    text-align-last: center;
+    text-transform: capitalize
+   }
+   .main p{
+    text-align-last: center;
+   }
+   .text-for-icons{
+    padding-left: 5px;
+   }
+   #icons {
+    font-size: 50px;
+    color:red;
+    background-color: aliceblue;
+   }
+
+   #icons:nth-of-type(2){
+    color: black;
+    background-color: aqua;
+   }
+   /*Domaci zadatak:
+   Kartica e nalazi na sredini
+   Gornje dve ivice su oble,
+   donje dve ivice su pod pravim uglom,
+   slika da zauzima jednu trecinu kartice,
+   Slika predstavlja kucu koja se prodaje'
+   Ispod slike se nalazi adresa kuce,
+    ispod adrese se nalazi grad i zemlja(neki podnaslov).
+    Nakon tih informacija imamo:
+    ikonice spavce sobe,
+    kupatila,
+    bazen,
+    kvadratura kuce 200m2.
+    */
+   
