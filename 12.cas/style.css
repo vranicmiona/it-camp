@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 16px;
+}
+.main{
+    margin:auto;
+    width:90%;
+    height: 60vh;
+    background-color: chartreuse;
+    font-size: 1.2em;
+}
+.child{
+    background-color: darkgrey;
+    font-size: 1.2rem;
+    width: 50%;
+}
+/*Apsolutne lengths:
+cm - centimeters
+mm - milimeters
+in - inches (1 in = 96px)
+px - pixsels
+pt - points 
+pc - picas (1 pc = 12pt)
+*/
+/*Relativne lengths:
+em - Realativna u odnosu na font-size od perent elementa
+rem - Relativna u odosu na font-size od body-ja (route elementa).Ne nasledjuje velicinu od svog roditelja.
+vw - viewport of width - Relativna u odnosu na sirinu ekrana.
+vh - viewport of height - Relativna u odnosu na visinu ekrana.
+vmin - viewport of min - Realativna jedan procenat u odnosu na manji deo. 
+vmax - viewport of max - Realtivna jedna posto u odnosu na veci deo.
+% - Procenat je relativna u odnosu na perent element*/
