@@ -31,10 +31,13 @@ background-color: rgb(74, 52, 201);
     margin: auto;
     width:600px;
     height: 700px;
-    background-image: url("./img3.jpg");
+    background-image: url("./img3.jpg"), url("./img1.jpg");
     background-repeat: no-repeat;
     /*background-size: contain;, siri sliku do odredjene visine i ne sece sliku.*/
     /*background-size: cover;, siri sliku, ali i sece visinu */
+    /*background-size: 100%; , jedna vrednost predstavlja sirinu*/
+    /*background-size: 100% 40%; , prav vrednost se odnosi na sirinu a druga na visinu*/
+    background-size: 100% 50%, 100% 100%;
 }
 /*.main:nth-of-type(2){
     margin:auto;
