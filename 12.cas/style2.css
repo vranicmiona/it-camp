@@ -8,12 +8,47 @@
 header {
     width:100vw;
     height: 20vh;
-    background-color: #9932cc;
+    background-color: #b789ce;
 }
-.img {
-    width: 10%;
-    height:90%;
+
+img{
+padding-left: 2%; 
+padding-top: 0.5%;   
+width:10%;
+height:90%;
 }
+
 .links{
     display: inline-block;
+    margin-left: 18rem;
+    
 }
+
+.links a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0d0dfc;
+    padding-right: 0.5rem;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.links a:visited{
+        padding: 0.5rem;
+        background-color: #0e5e26;
+        border-radius: 10px;
+        color:white;
+}
+.links a:hover{
+        padding: 0.5rem;
+        background-color: rgb(37, 30, 97);
+        border-radius: 10px;
+        color: #8f3636;
+    
+}
+
+.links a:active{
+    padding: 0.5rem;
+    border-radius: 10px;
+    color:chartreuse;
+}
+
