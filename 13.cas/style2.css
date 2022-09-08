@@ -2,32 +2,34 @@
     margin: 0;
     box-sizing: border-box;
 }
-.box{
-    width: 100px;
-    height: 100px;
-    float:left;
+
+body{
+    height:150px;
+    weight:150px;
+    float: left;
 }
-.box1 {
-    background-color: rgba(138, 43, 226, 0.6);
+
+.box1{
+    background-color: aqua;
 }
-.box2 {
-    background-color: #40e22b;
+.box2{
+    background-color: rgb(41, 22, 153);
 }
-.box3 {
-    background-color: #747338;
+.box3{
+    background-color: rgb(9, 255, 0);
 }
-.box4 {
-    background-color: #2baee2;
+.box4{
+    background-color: rgb(255, 0, 179);
 }
-.box5 {
-    background-color: #2be2d9;
+.box5{
+    background-color: rgb(187, 255, 0);
 }
-.box6 {
-    background-color: #9588a1;
+.box6{
+    background-color: rgb(255, 0, 0);
 }
-.box7 {
-    background-color: #e22b2b;
+.box7{
+    background-color: rgb(180, 29, 67);
 }
-.box8 {
-    background-color: #e27d2b;
+.box8{
+    background-color: rgb(83, 150, 92);
 }

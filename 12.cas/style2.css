@@ -1,8 +1,15 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Open Sans', sans-serif
 }   
-   
+   body{
+    background-color: rgb(189, 189, 189);
+    cursor: pointer;
+   }
    
    
 header {
@@ -19,7 +26,6 @@ height:90%;
 }
 
 .links{
-    display: inline-block;
     margin-left: 18rem;
     
 }
@@ -31,6 +37,7 @@ height:90%;
     padding-right: 0.5rem;
     text-transform: uppercase;
     cursor:pointer;
+    margin-bottom: 3rem;
 }
 .links a:visited{
         padding: 0.5rem;
@@ -51,4 +58,67 @@ height:90%;
     border-radius: 10px;
     color:chartreuse;
 }
+.main{
+      float:left;
+      width:35%;
+      height:50vh;
+      padding: 5rem;
+      margin-top:6rem;
+      margin-left:5rem ;
 
+
+    
+}
+.main p{
+    color:rgb(0, 0, 0);
+    margin:55px 20px 30px 55px ;
+    font-size: 15px;
+    
+}
+.main h1{
+    color:#0d0dfc;
+    font-size: 80px;
+}
+.main2{
+    float:right;
+    margin:80px 50px 20px;
+    border: solid rgb(35, 48, 219);
+    border-radius: 20px;
+    width:400px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+
+}
+.main2 label+input[type="text"]{
+    width:350px;
+    height:50px;
+    margin:20px;
+    background-color: #c4c1c1;
+    border: none;
+
+
+}
+.main2 label+input[type="password"]{
+    width:350px;
+    height:50px;
+    margin:20px;
+    background-color:#c4c1c1 ;
+    border: none;
+}
+.main2 button[type="submit"]{
+    width:350px;
+    height:50px;
+    margin:20px;
+    background-color: blue;
+    border: none;
+}
+.main2 button[type="reset"]
+{
+    width:350px;
+    height:50px;
+    margin-bottom: 30px;
+    background-color: rgb(23, 230, 23);
+    border: none;
+    
+}
