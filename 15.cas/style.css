@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Tiro Bangla', serif
+}
+.main{
+    margin:2rem auto;
+    width:90%;
+    height: 200vh;
+    background: rgb(32, 148, 177);
+    position:relative;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(21, 189, 15);
+    /*position:static; Defaultna vrednost kod position static,ne menja nista*/
+    /*position:relative; Ostavlja rezervisan prostor na kom se nalazio (tu se automatski nece naci sl element)*/
+    /*Dobijamo mogucnost pomeranja elementa (sa svih sgtrana) u odosu na perent element*/
+    position: relative;/*Omogucava nam da pomeramo element pomocu kodova ispod*/
+    top:70px;
+    left:50%;
+    /*bottom:30px;*/
+    /*right:160px;*/
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(189, 27, 15);
+    position:absolute;/*Absoulute ne cuva prostor na kom se nalazio (tu se automatski nalazi sledeci element ispod onog na kom je position absolute)*/
+    /*Perent element mora imati position razlicit od static kao ib pomeranje bilo relativno u odnosu  na celu stranicu.*/
+    top:0px;
+    right:0px;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(77, 32, 184);
+    position: fixed;
+    top:50px;
+    left:150px;
+}
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(226, 230, 44);
+    position:sticky;
+    /*Sticky cuva prostor na kom se nalazio (tu se nece automatski nece naci sledeci element ispod onoga)*/
+    /*Dobijamo mogucnost pomeranja elementa(sa svih strana) u odosu na ttenutno postavljeni element*/
+    left:50px;
+    top:0;
+     z-index: 10;
+}
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(189, 15, 151);
+    z-index: 20;
+}
+
+

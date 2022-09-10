@@ -16,6 +16,7 @@ header {
     width:100vw;
     height: 20vh;
     background-color: #b789ce;
+    position: relative;
 }
 
 img{
@@ -27,6 +28,7 @@ height:90%;
 
 .links{
     margin-left: 18rem;
+    position: absolute;
     
 }
 
