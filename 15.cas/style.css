@@ -24,7 +24,7 @@ font-family: 'Tiro Bangla', serif
     background-color: rgb(21, 189, 15);
     /*position:static; Defaultna vrednost kod position static,ne menja nista*/
     /*position:relative; Ostavlja rezervisan prostor na kom se nalazio (tu se automatski nece naci sl element)*/
-    /*Dobijamo mogucnost pomeranja elementa (sa svih sgtrana) u odosu na perent element*/
+    /*Dobijamo mogucnost pomeranja elementa (sa svih strana) u odosu na perent element*/
     position: relative;/*Omogucava nam da pomeramo element pomocu kodova ispod*/
     top:70px;
     left:50%;
@@ -56,7 +56,7 @@ font-family: 'Tiro Bangla', serif
     background-color: rgb(226, 230, 44);
     position:sticky;
     /*Sticky cuva prostor na kom se nalazio (tu se nece automatski nece naci sledeci element ispod onoga)*/
-    /*Dobijamo mogucnost pomeranja elementa(sa svih strana) u odosu na ttenutno postavljeni element*/
+    /*Dobijamo mogucnost pomeranja elementa(sa svih strana) u odosu na trenutno postavljeni element*/
     left:50px;
     top:0;
      z-index: 10;
