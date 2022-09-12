@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: honeydew;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+header {
+    width:100%;
+    height: 20vh;
+    background-color:  rgb(243, 145, 164);
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    float:left;
+    margin:2.5rem;
+    color:aliceblue;
+}
+
+header h1 i{
+    color:rgb(146, 9, 73);
+}
+
+.search-bar input[type="text"]{
+    width:15rem;
+    height:2rem;
+    position:relative;
+    top:3rem;
+    left:7rem;
+    outline: none;
+}
+::placeholder{
+    color:rgb(0, 0, 0);
+    
+}
+
+
+form button[type="submit"]{
+    width:3rem;
+    height:2rem;
+    position:relative;
+    top:3rem;
+    left:7rem;
+}
+
+  
+
+.main{
+    float:right;
+    font-size: 18px;
+    margin: 3rem 2rem 2rem 2rem;
+}
+
+.main a{
+    text-decoration: none;
+    padding:5px;
+    color:rgb(146, 9, 73);
+    position: relative;
+    bottom: 2rem;
+}
+
+.main1{
+    width:25%;
+    height:50vh;
+    font-size: 15px;
+    position: relative;
+    top:8rem;
+    left:10rem;
+}
+
+.main1 h3{
+    font-size: 30px;
+}
+
+.main1 p{
+    padding:15px;
+}
+img:nth-of-type(1){
+    width:40%;
+    height:80vh;
+    float:right;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    bottom: 15rem;
+    right:13rem;
+    clear: both;
+}
+
+img:nth-of-type(2){
+    width: 35%;
+    height: 70vh;
+    float:right;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    top:10rem;
+    right:15rem;
+
+}
+
+.main2 {
+    width:25%;
+    height:50vh;
+    font-size: 15px;
+    position: relative;
+    top:20rem;
+    left:45rem;
+}
+img:nth-of-type(3){
+    transform:rotate(180deg);
+    width:100%;
+   height:70vh;
+   object-fit: cover;
+   position: relative;
+   top:20rem;
+   opacity: 60%;
+}
+
+.main3 {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+    position: relative;
+    left:7rem;
+}
+
+.main3 h2{
+    font-size: 34px;
+    text-align: center;
+    line-height: 1.26;
+    font-weight: 400;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    position: relative;
+    right: 9rem;
+}
+
+.main3 ol li{
+    padding:15px;
+    font-size: 20px;
+}
+
+
+.main4 {
+    position: relative;
+    left: 50rem;
+    bottom: 12rem;
+}
+
+.main4 ol li{
+    padding:15px;
+    font-size: 20px;
+}
+
+.kraj{
+    width: 100%;
+    height: 10vh;
+    background-color:  rgb(243, 145, 164);
+}
+
+.kraj h1{
+    text-align: center;
+}
