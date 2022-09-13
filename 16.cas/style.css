@@ -11,7 +11,7 @@ body{
 
 header {
     width:100%;
-    height: 20vh;
+    height: 10vh;
     background-color:  rgb(243, 145, 164);
     position: sticky;
     top:0;
@@ -22,7 +22,7 @@ header h1{
     text-transform: uppercase;
     font-size: 30px;
     float:left;
-    margin:2.5rem;
+    margin:1rem;
     color:aliceblue;
 }
 
@@ -32,11 +32,13 @@ header h1 i{
 
 .search-bar input[type="text"]{
     width:15rem;
-    height:2rem;
+    height:1.5rem;
     position:relative;
-    top:3rem;
+    top:1.1rem;
     left:7rem;
     outline: none;
+    border: none;
+    border-radius: 25px;
 }
 ::placeholder{
     color:rgb(0, 0, 0);
@@ -48,16 +50,19 @@ form button[type="submit"]{
     width:3rem;
     height:2rem;
     position:relative;
-    top:3rem;
+    top:1.1rem;
     left:7rem;
+    background-color:  rgb(243, 145, 164);
+    border: none;
+    
 }
 
   
 
 .main{
     float:right;
-    font-size: 18px;
-    margin: 3rem 2rem 2rem 2rem;
+    font-size: 15px;
+    margin: 1.2rem 2rem 2rem 2rem;
 }
 
 .main a{
