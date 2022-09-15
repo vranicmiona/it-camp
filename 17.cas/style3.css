@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 75%;
+    height:25%;
+    background-color: chocolate;
+    margin:auto;
+    display: flex;
+ 
+}
+
+
+
