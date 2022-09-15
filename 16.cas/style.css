@@ -128,7 +128,7 @@ img:nth-of-type(3){
    object-fit: cover;
    position: relative;
    top:20rem;
-   opacity: 60%;
+  opacity: 60%;
 }
 
 .main3 {
