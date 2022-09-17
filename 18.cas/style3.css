@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+header{
+    width: 100%;
+    height:15vh;
+    background-color: #0000ff;
+    margin: auto;
+}
+
+.linkoviinaslov {
+    width: 80%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.linkoviinaslov h2{
+    color: white;
+    font-size: 35px;
+}
+
+.linkoviinaslov ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 30%;
+}
+
+.linkoviinaslov ul li{
+   padding: 20px;
+}
+
+.linkoviinaslov ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.linkoviinaslov button[type="submit"]
+{
+    background-color: white;
+    border: none;
+    border-radius: 60px;
+    width:7rem;
+    height:2rem;
+    font-size: 18px;
+}
+
+.boxslika{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin:auto;
+    width: 80%;
+    height:100vh;
+}
+
+.box1{
+    width: 30%;
+    height:30vh;
+    font-size: 13px;
+    background-color: #f1e9e9;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top:45px;
+  
+}
+.box1 h3{
+    margin-top: 10px;
+}
+.box2{
+    width: 20rem;
+    height:30vh;
+    font-size: 13px;
+    background-color:#f1e9e9;
+    padding:10px;
+    text-align: center;
+    position: relative;
+    top:130px;
+    left:50px;
+
+}
+    .box2 h3{
+        margin-top: 10px;
+    }
+.box3{
+    width: 30%;
+    height:30vh;
+    font-size: 13px;
+    background-color:#f1e9e9;
+    padding:10px;
+    text-align: center;
+    position: relative;
+    top:270px;
+    right:273px;
+}
+.box3 h3{
+    margin-top: 10px;
+}
+.box4{
+    width: 30%;
+    height:30vh;
+    font-size: 14px;
+    background-color: #f1e9e9;
+    padding:10px;
+    text-align: center;
+    position: relative;
+    top:355px;
+    right:220px;
+}
+
+.box4 h3{
+    margin-top: 10px;
+}
+.boxslika img{
+    margin-top: 60px;
+    margin-right: 70px;
+    height: 400px;
+}
