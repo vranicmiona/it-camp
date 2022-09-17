@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+}
+
+.main{
+    width: 75%;
+    height: 550px;
+    background-color: rgb(212, 139, 110);
+    display: flex;
+    /*Horizontalno poravnanje*/
+/*justify-content:start; - defaultna vredost ili flex:start;*/
+/*justify-content: center; - kao i text-align:center;*/
+/*justify-content: end;*/
+/*justify-content: space-between; */
+/*justify-content: space-around;*/
+/*justify-content: space-evenly; - isti razmak svuda*/
+/*align-items: center;*/
+/*align-items: flex-end;*/
+/*align-items: flex-start;*/
+}
+
+
+
+.box1{
+    /*flex-basis:150px;*/
+    height:150px;
+    background-color: rgb(0, 0, 255);
+    align-self: start;
+    flex-grow: 1;
+    /*flex-shrink: 4;*/
+}
+.box2{
+    flex-basis:150px;
+    height: 150px;
+    background-color: rgb(0, 255, 170);
+    align-self: start;
+    flex-grow:1;
+    /*flex-shrink: 1;*/
+}
+
+/* flex-grow svojstvo zauzima se celokupma sirina perent kontejnera*/
+/*Definisanje sirine nekog child elementa bi zapravo predtavljalo minimalinu sirnu tog elementa*/
+/* flex-shrink nam govor da pri smanjenju ekrana smanjuje se samo prvi kontrjner do 4 puta od ostala dva*/
+.box3{
+    /*flex-basis:150px;*/
+    height: 150px;
+    background-color: rgb(179, 255, 0);
+    align-self: start;
+    flex-grow: 1;
+    /*flex-shrink: 1;*/
+}
