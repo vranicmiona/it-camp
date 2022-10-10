@@ -10,7 +10,6 @@
     background-image: linear-gradient(rgb( 4, 9,30, 0.7),rgb( 4, 9,30, 0.7)), url(./image1.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 
 nav img{
@@ -18,14 +17,15 @@ nav img{
     margin-top: 3%;
     width:150px;
 }
+
 .linkovi{
     width: 30%;
     height: 10vh;
     position: relative;
     left:850px;
     bottom: 48px;
-
 }
+
 .linkovi ul{
     display: flex;
     justify-content: space-between;
