@@ -1,4 +1,61 @@
-// TIPOVI PODATAKA U JAVASCRIPT-U
+document.getElementById("paragraf").innerHTML = 
+"Ovo je paragraf unet naknadno."
+
+paragraf = document.getElementById("paragraf")
+paragraf.style.color ="red";
+
+paragraf = document.getElementById("paragraf")
+paragraf.style.backgroundColor = "green";
+
+
+paragraf = document.getElementById("paragraf")
+paragraf.style.padding = "10%";
+
+console.log("Ovo je nas prvi ispis u consoli.");
+
+// TIPOVI PODATAKA U JAVA SCRIPTU
+
+// Za proveru tipa neke promenljive (variable) koristi se typeof operator.
+
+// PRIMITIVNI TIPOVO OPERATORA: //
+
+// 1. String - niz karaktera koji je zapisan unutar navodnika (obicnih ili duplih)
+
+console.log("Ovo je neki string unutar duplih navodnika");
+console.log(typeof "Ovo je neki string unutar duplh navodnika");
+
+// 2. Number - predstavlja broj koji moze biti zapisan sa ili bez decimalnog zapisa
+// Ne pravi se razlika izmedju celih, realnih ili komplaeksnih brojeva.
+
+console.log(15);
+console.log(typeof 15);
+console.log( -56.5);
+console.log(typeof -56.5);
+
+// 3. BigInt - se koristi za skladistenje brojeva cija granica prelazi granicu.
+// Number tipa podatka
+
+console.log(BigInt(78395692086764687598530902010011234567890));
+console.log(typeof BigInt(78395692086764687598530902010011234567890));
+
+// 4. Boolean - logicki intetitet koji moze da ima dve vrednosti:
+// true,
+// false,
+// Najcesce se koristi u kondicionalnim (if naredbe) i ima velikuprimenu.
+
+daLiPadaKisa = false;
+console.log(true);
+console.log(typeof true);
+console.log(daLiPadaKisa);
+
+// 5. Undefined - je tp podatka koji se javlja kada imamo neku promenljivu, ali joj nismo dodelili vrednost.
+// U tom slucaju i vrednost i tip promenljive je undefind.
+
+// 6. Null - je tip podatka za nepostojanu promenljivu ili za promenljivu kojoj smo dodelili nekorektnu vrednost.
+
+let skola = null;
+console.log(skola);
+console.log(typeof skola); // rezultat je Object
 
 skola = null;
 console.log(typeof skola); // tip verdnosti promenljive je Object
