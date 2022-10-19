@@ -90,13 +90,18 @@ console.log(niz1);  // brojevi koji su ispisani u consoli su indexi,i njihovo in
 niz2 = ["Hamed", 15, false ];
 console.log(niz2);
 
+niz10 = ["jabuka", "kruska", "kajsija"];
+console.log(niz10);
 // Jos jedan nacin definisanja niza:
 
 niz3 = new Array(["Mitar", "Dzenan", "Haris","Hamed", "Nikola"]);
 console.log(niz3);
 
+niz10 = new Array(["jabuka", "kruska", "kajsija"]);
+console.log(niz10);
+
 // 2. Objekti (Object) - su GLAVNI NEPRMITIVNI TIP PODDATKA U JAVA SCRIPTU.
-// Objekti se zapisuju po principu nmae:value pair (ime:vrednost par)
+// Objekti se zapisuju po principu name:value pair (ime:vrednost par)
 
 obj1 = {
     ime:"Miona",
@@ -105,15 +110,44 @@ obj1 = {
     fakultet:"PMF",
     punoletnost:true
 }
-// Niz se moze sastojati od vise elemenata, kod niaz mozemo da pristpimo elementu preko indexa
+// Niz se moze sastojati od vise elemenata, kod niza mozemo da pristpimo elementu preko indexa
 console.log(obj1.godine);
+
+obj2 = {
+    ime:"Aja",
+    prezime:"...",
+    godina:2,
+    hobi:"beba",
+    skola:"vrtic",
+    punoletnost:false
+}
+
+console.log(obj2.hobi);
+
+obj4 = {
+predmeti:"8 predmeta",
+semestri:2,
+ESPB:60,
+ocene:"10, 9, 8, 7, 6",
+uspeh:"cekamo kraj godine",
+student:true
+}
+console.log(obj4.ocene);
+console.log(obj4.student);
+console.log(obj4.uspeh);
+
+
+
 
 // 3. Setovi (Sets) - oni su slicni nizovima sa razlikom da set ne moze da sadrzi duplikate
 
 set1 = new Set(["Alen", "Hasan", "Amer", "Alen"]); // Nisu dozvoljeni duplikati oni se ignorisu
 console.log(set1);
 
-// Mape (Maps) - slicne su objectima sa nesto drugacijim nacinom definisanja
+set2 = new Set(["MIONA", "MIONA", "MITAR", "MARIJA", "MARIJA"]);
+console.log(set2);
+
+// 4. Mape (Maps) - slicne su objectima sa nesto drugacijim nacinom definisanja
 
 map1 = new Map([["jabuke", 50], 
 ["kruske", 60], 
@@ -127,4 +161,21 @@ obj2 = new Object(
         godine: "19",
     }
 )
+console.log(obj2);
+
+map2 = new Map([["kaput", 9000],
+["patike nike", 8020],
+["dukserica", 1000],
+["dusek", 6000],
+["jastuk", 2000]]);
+
+console.log(map2);
+
+obj2 = new Object(
+    {
+        potvrdan:true,
+        odrican:false,
+        godine:20,
+    }
+);
 console.log(obj2);
