@@ -43,5 +43,3 @@ ProsekOcena = 4.24 ; // korektno
 
 
 
-
-

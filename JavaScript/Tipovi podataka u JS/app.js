@@ -55,12 +55,13 @@ console.log(daLiPadaKisa);
 
 let skola = null;
 console.log(skola);
-console.log(typeof skola); // rezultat je Object
+console.log(typeof skola); // rezultat je null
+
 
 skola = null;
 console.log(typeof skola); // tip verdnosti promenljive je Object
 
-// 7. Symbol - Novi tip podatka u JvaScriptu koji se koristi za dodeljivanje 
+// 7. Symbol - Novi tip podatka u JavaScriptu koji se koristi za dodeljivanje 
 // jedinstevne ili anonimne vrednoesti
 
 x = Symbol("Danas je lepo vreme.");
@@ -102,6 +103,14 @@ console.log(niz10);
 
 // 2. Objekti (Object) - su GLAVNI NEPRMITIVNI TIP PODDATKA U JAVA SCRIPTU.
 // Objekti se zapisuju po principu name:value pair (ime:vrednost par)
+obj10 = {
+    kupovina:2000,
+    stan: 100,
+    troskovi: 300,
+    ulica: "Kralja Petra Prvoga",
+    adresa: 92,
+}
+console.log(obj10.stan);
 
 obj1 = {
     ime:"Miona",
