@@ -1,5 +1,5 @@
 // OPERATORI U JAVA SCRIPT-U //
-// Podelicemo operatore u sets grupa:
+// Podelicemo operatore u sest grupa:
 // 1. Aritmeticki operatori(Aritmetic operators);
 // 2. Opertatori dodele vrednosti (Assigment operators);
 // 3. String operatori (String operators);
@@ -47,6 +47,13 @@ console.log(z);
 let w = 65;
 console.log(--w);
 
+// Operatori u JS se mogu podeliti u sest grup:
+// aritmeticki opertori
+// string operators
+// Type operators
+// Assigments operators
+// Comand operators
+// 
 
 
 

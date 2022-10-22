@@ -47,7 +47,7 @@ console.log(z);
 // z = 23;
 // console.log(z); - reinicaizacija definisane promenljive putem const nije dozvoljena, kada se radi o istom prostru.
 
-
+// INICIJALIZACIJA ZNACI DODELA VREDNOSTI, A DEKLARACIJA ZNACI DODELA (VARIABLE) MEMORIJSKE LOKACIJE ZA TU VREDNOST
 
 
 
