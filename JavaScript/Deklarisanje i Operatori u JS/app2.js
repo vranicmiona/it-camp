@@ -67,7 +67,7 @@ x %= 2; // x = 6 % 2
 console.log(x);
 // 2.7 **= - stepenovanje odredjene vrednosti na postojecu promenljivu
 y **= 2;
-console.log(y);
+console.log(y); 
 
 // 3. String operators
 // Jedan od nacina spajanja stringova koriscenjem + operatora.
@@ -81,7 +81,7 @@ console.log("Omar" + 3);
 console.log(3 + "Omar"); // rezultat spajanja stringa i broja JE UVEK STRING!!!
 console.log(typeof (3 + "Omar"));
 console.log(3 + "2"); // Bez obzira sto dva moze biti pretvorena u korektan broj, nece se izvrsiti sabiranje
-// Java SCript ce pokusati da preve String u broj i da izvrsi racunsku operaciju
+// Java Script ce pokusati da preve String u broj i da izvrsi racunsku operaciju
 console.log(4 -"2"); // 2
 console.log(4 * "2"); // 8
 console.log("3" / 1); // 3
@@ -165,7 +165,7 @@ console.log("Nismo nasli promenljivu koja je veca od nule");
 
 console.log(!Boolean("prviDeo" + " " + "drugiDeo"));
  
-// instant
+// instant 
 
 
 
