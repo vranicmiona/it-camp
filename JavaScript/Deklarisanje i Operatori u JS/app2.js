@@ -167,7 +167,21 @@ console.log(!Boolean("prviDeo" + " " + "drugiDeo"));
  
 // instant 
 
+let m1 = 6;
+let m2 = -10;
+let m3 = -100;
+let m4 = 6;
 
+console.log(++m1);
+console.log(--m3);
+console.log(++m3);
+console.log(++m4);  
+m4 *= 3;
+console.log(m4);
+m3 %= 2;
+console.log(m3);
+m3 **= 4;
+console.log(m3);
 
 
 
