@@ -164,8 +164,6 @@ console.log("Nismo nasli promenljivu koja je veca od nule");
 // 5.3   !  - (Not) okrece vrednost  => iz true u false i obratno 
 
 console.log(!Boolean("prviDeo" + " " + "drugiDeo"));
- 
-// instant 
 
 let m1 = 6;
 let m2 = -10;
@@ -184,6 +182,21 @@ m3 **= 4;
 console.log(m3);
 
 
+// 6. Type Operators 
+
+// 6.1 typeof operator se koristi za ispitivanje tipa oderdjene proemnljive
+
+isSunny = false;
+console.log(typeof isSunny);
+
+// 6.2 instanceof - za proveru da li je neka variabla instanca objekta npr.
+
+const obj = {
+    ime: "Omar",
+    prezime: "Semsovic",
+};
+
+console.log(obj instanceof Object);
 
 
 
