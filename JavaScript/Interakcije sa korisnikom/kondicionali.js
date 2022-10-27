@@ -66,5 +66,5 @@ switch (br){
     case 15:{
         console.log("Korisnik je uneo broj 15: ");
         }
-        default:
+        default: // moze se naci i u u sredini ne mora na kraju
             console.log("Korisnik nije uneo broj, koji se trazi ");}
