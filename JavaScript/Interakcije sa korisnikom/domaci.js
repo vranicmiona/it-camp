@@ -1,3 +1,5 @@
+// Prvi zadatak:
+
 let a = +prompt("Unesite prvi broj: ");
 let b = +prompt("Unesite drugi broj: ");
 
@@ -10,6 +12,8 @@ console.log(pravougaonik);
 }else{
     console.log("Niste uneli broj: ");
 }
+
+// Drugi zadatak:
 
 let x = +prompt("Unesite prvi broj: ");
 let y = +prompt("Unesite drugi broj: ");
