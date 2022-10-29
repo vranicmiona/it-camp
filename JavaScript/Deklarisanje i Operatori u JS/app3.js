@@ -20,3 +20,4 @@ for (q = 10; q <= 20; q++){
         console.log(q);
     }
 }
+for()
