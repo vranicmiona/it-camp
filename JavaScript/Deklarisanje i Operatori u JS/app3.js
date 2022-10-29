@@ -9,9 +9,7 @@ for (let b = 50; b <= 100; b++) {
 }
 // Ispisati dvostruku vrednost prirodnih brojeva od 6 do 14
 for (let a = 6; a <= 14; a++) {
-    if (a = a**2) {
-        console.log(a);
-    }
+  console.log(a*2);
 }
 // Ipisati sumu neaprinih prirodnih brojeva od 10 do 20
 let sum = 0;
@@ -20,4 +18,3 @@ for (q = 10; q <= 20; q++){
         console.log(q);
     }
 }
-for()
