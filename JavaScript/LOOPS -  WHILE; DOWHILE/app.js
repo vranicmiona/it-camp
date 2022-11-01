@@ -8,14 +8,14 @@
 // Blok koda za izvrsavanja 
 // Definisati povecanje iteratora
 // }
-let i = 1;
+let i = 1; // iterator
 while (i < 11) {
     if (i % 2 === 0)
    { console.log(i);}
 i++; // Ako se ne definise kraj povecanje iteratora petlja ide u beskonacnost
 }
 
-let b = +prompt("Unesite broj:"); // ovde moze i const jer se nece manjati
+let b = +prompt("Unesite broj:"); // ovde moze i const jer se nece manjati-
 let broj = 1; // ITERATOR
 while (broj <= b) {
     console.log(broj**2); // iterator nam se povecava za kvadrat vrednosti
