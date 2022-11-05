@@ -27,7 +27,7 @@ for (let i = 0; i < duzina; i++) {
 }
 // Na osnovu unete recenice od strane koroisnika ispisati recenicu tako da svaki karakter ide jedan ispod drugog. Dok ako je neki karakter = "a", neka se ispise broj 5, a u slucaju da je karakter jednak "s" neka se ispise nista
 
-const rec = String("Unesite neku recenicu: ");
+const rec = prompt("Unesite neku recenicu: ");
 const duz = rec.length;
 for (let r = 0; r < duz; r++) {
     if (rec[r] === "a"){}
