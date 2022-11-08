@@ -45,7 +45,7 @@ for (i = 1; 1 <= duzina; i++) {
     if (recenica[i] === "M" || recenica[i] === "m") {
         brojac++;
     } 
-    else {console.log("Unasem datom stringu ima " + brojac + "velikih i malih slova m.");}
+    else {console.log("U nasem datom stringu ima " + brojac + "velikih i malih slova m.");}
 }
 
 // 2. Prebrojati koliko ima znakova koji su cifre u unetom stringu.
