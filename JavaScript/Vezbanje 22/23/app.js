@@ -20,6 +20,7 @@ novaRecenica += recenica[a];
 }}
 
 console.log(novaRecenica);
+
 // 2.  Napraviti novu recenicu gde ce umesto slova "a" pisati "t". Dok ako se posle slova "a"
 //  nalazi slovo "n" pisace "d" umesto a.
 const first = "Banana je omiljeno voce Talibovo. Banana nam stize iz Paname. I banane su jako zdrave.";
@@ -41,20 +42,59 @@ for (i = 0; i <= duzina; i++) {
 const prvo = "Mama ima momu.";
 let drugo = recenica.length;
 let brojac = 0;
-for (i = 1; 1 <= duzina; i++) {
-    if (recenica[i] === "M" || recenica[i] === "m") {
+for (i = 1; 1 < duzina; i++) {
+    if (prvo[i] === "M" || prvo[i] === "m") {
         brojac++;
     } 
-    else {console.log("U nasem datom stringu ima " + brojac + "velikih i malih slova m.");}
-}
+    
+} console.log("U nasem datom stringu ima " + brojac + "velikih i malih slova m.");
 
 // 2. Prebrojati koliko ima znakova koji su cifre u unetom stringu.
 
 const brojevi = "Danas je utorak 11/08/2022, to bi znacilo da idemo u skolu vec 39 dana.";
 let velicina = brojevi.length;
 let count = 0;
-for (a = 1; a <= velicina; a++) {
+for (a = 1; a < velicina; a++) {
     if (brojevi[a] >= "0" && brojevi[a] <= "9") {
     count++;
-    } else {console.log("U stringu ima " + count + "razlicitih brojeva.");}
+    }
+} console.log("U stringu ima " + count + "razlicitih brojeva.");
+
+// 3. Prebrojati koliko ima malih slova u unetom stringu . 
+
+const treciZadatak = "Danas je sreda i bas je lep i suncan dan. Ja sam Miona Vranic!";
+let n = 0;
+for (c = 1; c < treciZadatak,length; c++) {
+    if(treciZadatak[c] >= "a" && treciZadatak[a] <= "z") {
+        n++;
+    } else{console.log(n);}
+}
+
+// 4. Ispitati da li u unetom stringu ima vise malih ili velikih slova. 
+const cetvrtiZadatak = "Od casova danas na PMF sam imala, Fizicku hemiju i  Organsku hemiju.";
+let mala = 0;
+let velika = 0;
+for (w = 1; w < cetvrtiZadatak.length; w++) {
+    if(cetvrtiZadatak[w] >= "a" && cetvrtiZadatak[w] <= "z") {
+        mala++;
+    } else if(cetvrtiZadatak[w] >= "A" && cetvrtiZadatak[w] <= "Z"){
+        velika++;
+    } else if(mala > velika) {
+        console.log("Vise ima malih slova");
+    } else if(velika < mala) {
+        console.log("Vise ima velikih slova");
+    } else if(mala === velika) {
+        console.log("PODEJEDNAKO IH IMA");
+    } 
+}
+
+// 5. Proveriti da li je uneti string palindrom (potpuno isti kada se cita od pozadi).
+// Npr. "anavolimilvana" je palindrom.
+const petiZadatak = "zasutrasupredvidjenevezbe";
+let petiZadatak2 = ""
+for (u = 1; u < petiZadatak; u++) {
+      petiZadtak2 += petiZadatak[u]
+    if (petiZadatak === petiZadatak2) {
+    console.log("NIJE");
+    } else if(peti){}
 }
