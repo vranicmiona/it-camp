@@ -49,6 +49,17 @@ for (i = 1; 1 < duzina; i++) {
     
 } console.log("U nasem datom stringu ima " + brojac + "velikih i malih slova m.");
 
+const r = prompt("Unesite neki string: ")
+let o = 0;
+while(q < r.length) {
+    if (r[q] === "m" || r[q] === "M") {
+        o++;
+    }else {
+        continue;
+    }q++;
+
+} console.log(o);
+
 // 2. Prebrojati koliko ima znakova koji su cifre u unetom stringu.
 
 const brojevi = "Danas je utorak 11/08/2022, to bi znacilo da idemo u skolu vec 39 dana.";
@@ -59,6 +70,14 @@ for (a = 1; a < velicina; a++) {
     count++;
     }
 } console.log("U stringu ima " + count + "razlicitih brojeva.");
+
+const t = prompt("Unesite: ");
+for (let t1 = 0; t1 < t.length; t1++) {
+    if(!isNaN(t[i])){
+o++;
+    }
+}console.log(o);
+
 
 // 3. Prebrojati koliko ima malih slova u unetom stringu . 
 
@@ -98,3 +117,4 @@ for (u = 1; u < petiZadatak; u++) {
     console.log("NIJE");
     } else if(peti){}
 }
+
