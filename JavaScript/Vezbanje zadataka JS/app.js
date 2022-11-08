@@ -14,3 +14,13 @@ number++
 }
 console.log("Aritmenticka sredina deljivih brojeva sa 3, iz intervala [3, 17] je: " + sum / counter);
 
+// 1. Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo). Npr. za string "Mama ima momu" , dobija se rezultat 5.
+
+const recenica = "Mama ima momu.";
+let duzina = recenica.length;
+let brojac = 0;
+for (i = 1; 1 <= duzina; i++) {
+    if (recenica[i] === "M" || recenica[i] === "m") {
+        brojac++;
+    } console.log("Unasem datom stringu ima " + brojac + "velikih i maloh slova m.");
+}

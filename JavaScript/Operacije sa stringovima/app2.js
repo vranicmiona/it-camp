@@ -54,3 +54,4 @@ for (a = 0; a < first.length; a++) {
     }
 } 
 console.log(second);
+
