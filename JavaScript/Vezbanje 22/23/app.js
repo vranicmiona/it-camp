@@ -32,3 +32,29 @@ for (i = 0; i <= duzina; i++) {
         second += first[i];
     }
 }
+
+
+
+
+// 1. Prebrojati koliko se puta u unetom stringu pojavljuje slovo "M" (i veliko i malo). Npr. za string "Mama ima momu" , dobija se rezultat 5.
+
+const prvo = "Mama ima momu.";
+let drugo = recenica.length;
+let brojac = 0;
+for (i = 1; 1 <= duzina; i++) {
+    if (recenica[i] === "M" || recenica[i] === "m") {
+        brojac++;
+    } 
+    else {console.log("Unasem datom stringu ima " + brojac + "velikih i malih slova m.");}
+}
+
+// 2. Prebrojati koliko ima znakova koji su cifre u unetom stringu.
+
+const brojevi = "Danas je utorak 11/08/2022, to bi znacilo da idemo u skolu vec 39 dana.";
+let velicina = brojevi.length;
+let count = 0;
+for (a = 1; a <= velicina; a++) {
+    if (brojevi[a] >= "0" && brojevi[a] <= "9") {
+    count++;
+    } else {console.log("U stringu ima " + count + "razlicitih brojeva.");}
+}
