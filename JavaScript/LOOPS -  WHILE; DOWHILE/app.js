@@ -20,7 +20,7 @@ let broj = 1; // ITERATOR
 while (broj <= b) {
     console.log(broj**2); // iterator nam se povecava za kvadrat vrednosti
     broj++;
-} // kao uslov se stavlja nesto sto je boolien, bice boolien i bice uporedjivanje vrednosrti za if naredbe i tu se mora naci boolien
+} // kao uslov se stavlja nesto sto je boolien, bice boolien i bice uporedjivanje vrednosti za if naredbe i tu se mora naci boolien
 
 let g = +prompt("Unesite prvi broj ");
 let u = +prompt("Unesite drugi broj ");
@@ -39,7 +39,7 @@ while(g <= u){ // uslov mora biti boolien
     console.log("Brojeve ne smeju biti isti");
 }
 
-// Do While loop predstavlja poseban slucaj whil petlje,
+// Do While loop predstavlja poseban slucaj while petlje,
 // gde se prvo izvrsava kod, pa tek onda proverava uslov.
 
 // Sintaksa:

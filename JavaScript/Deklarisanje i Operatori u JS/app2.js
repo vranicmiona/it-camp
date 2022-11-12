@@ -70,7 +70,7 @@ y **= 2;
 console.log(y); 
 
 // 3. String operators
-// Jedan od nacina spajanja stringova koriscenjem + operatora.
+// Jedan od nacina spajanja stringova koriscenjem + operatora. (KONKATENACIJA)
 let prviDeo = "Danas je Omar";
 let drugiDeo = "doneo pizzu."
 console.log(Boolean(prviDeo + " " + drugiDeo));
@@ -115,7 +115,7 @@ console.log(b != c);
 // 4.4 !==  - Ispituje da li je razlicita vrednost ILI razlicit tip
 console.log(a !== d);
 
-//  4.5  >   - Da li ej prva vrednost veca od druge:
+//  4.5  >   - Da li je prva vrednost veca od druge:
 console.log(b > c);
 
 

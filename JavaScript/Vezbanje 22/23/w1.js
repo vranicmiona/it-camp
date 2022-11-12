@@ -12,7 +12,7 @@ for (a = 0; a <= recenica.length; a++) {
         recenica[a] !== "o" ||
         recenica[a] !== "u" 
     ){novaRecenica += recenica.toUpperCase();}
-    else if (recenica[a-71] === "") {
+    else if (recenica.length[a-1] === "") {
 novaRecenica += "."
 }
  else {
@@ -42,7 +42,7 @@ for (i = 0; i <= duzina; i++) {
 const prvo = "Mama ima momu.";
 let drugo = recenica.length;
 let brojac = 0;
-for (i = 1; 1 < duzina; i++) {
+for (i = 1; 1 <= duzina; i++) {
     if (prvo[i] === "M" || prvo[i] === "m") {
         brojac++;
     } 
@@ -103,7 +103,7 @@ for (w = 1; w < cetvrtiZadatak.length; w++) {
     } else if(velika < mala) {
         console.log("Vise ima velikih slova");
     } else if(mala === velika) {
-        console.log("PODEJEDNAKO IH IMA");
+        console.log("PODJEDNAKO IH IMA");
     } 
 }
 

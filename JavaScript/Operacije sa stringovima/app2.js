@@ -25,7 +25,8 @@ console.log("Recenica maim slovima ce biti: \n" + recenica1 + "dok ce recenica v
 // Ispisati novu recenicu gde ce svaka rec pocinjati velikim slovom
 const recenica = "sledece subote cemo imati test koji predstavlja kraj prvog ciklusa. nakon toga cemo videti ko sve nastavlja sa drugim ciklusom it campa."
 
-let novaRecenica = "" // da biu nju dodavali nove stvari
+let novaRecenica = "" // da bi 
+// u nju dodavali nove stvari
 // let novaRecenica2 = " "
 // console.log(Boolean(novaRecenica2));
 // console.log(Boolean(novaRecenica));
@@ -45,7 +46,7 @@ const first = "sledece subote cemo imati test koji predstavlja kraj prvog ciklus
 
 let second = "";
 for (a = 0; a < first.length; a++) {
-    if (a === first.length - 1 || first[a + 1] === "." || first[a +  1] === ",") {
+    if (a === first.length - 1 || first[a + 1] === "." || first[a + 1] === ",") {
         second += first[a].toUpperCase();
     } else if (recenica[a + 1] === " ") {
         second += first[a].toUpperCase();
@@ -54,4 +55,3 @@ for (a = 0; a < first.length; a++) {
     }
 } 
 console.log(second);
-

@@ -31,8 +31,3 @@ if (isNaN(x) || isNaN(y)){
 else {
     console.log("Kolicnik unetih brojeva je: " + x / y);
 }
-
-
-
-
-

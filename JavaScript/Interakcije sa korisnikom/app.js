@@ -10,7 +10,7 @@ const godine = prompt("Unesite svoju starost: ");
 console.log(typeof godine);
 // Sada je nepohodno prevesti godine u broj:
 
-// Postoje 2 nacina za prevodjdenje strnga u broj:
+// Postoje 2 nacina za prevodjdenje stringa u broj:
 // 1. Number(variabla)
 const brGodina = Number(godine);
 console.log(brGodina);

@@ -24,8 +24,8 @@ let recenica3 = ""
 for (let i = 0; i < recenica2.length; i++){
     if (recenica2[i] === "a" && recenica2[i+1] === "n"){
         recenica3 += "d";
-    }else if (reecnica[i] === "a"){
-        recenica2 += "t";
+    }else if (recnica2[i] === "a"){
+        recenica3 += "t";
     } else {
         recenica3 += recenica2[i];
     }

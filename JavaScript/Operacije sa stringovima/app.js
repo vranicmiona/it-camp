@@ -18,7 +18,7 @@ console.log(duzinaRecenice);
 console.log(omar.length);
 
 // Primer ---> Za svaki karakter neke recenice neka se ispise jedna ispod drugoga
-//Kod ovakvih zadataka iterator predstavlja index pomocu koga pristupamo arakteru stringa
+//Kod ovakvih zadataka iterator predstavlja index pomocu koga pristupamo karakteru stringa
 
 recenica = "Danas cemo raditi neke zadatke";
 const duzina = recenica.length;

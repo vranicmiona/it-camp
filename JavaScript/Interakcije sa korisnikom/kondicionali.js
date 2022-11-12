@@ -1,7 +1,7 @@
 // KONDICIONALI //
 
 // if (uslov1) {
-    // kod za izvrsavanje u slucau za ispunjenja uslova
+    // kod za izvrsavanje u slucaju ispunjenja uslova
 // } else if (uslov2){
 // kod za izvrsavanje u sluacju ispunjenja drugog uslova
 // }
