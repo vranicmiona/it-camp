@@ -12,7 +12,7 @@ for (a = 0; a <= recenica.length; a++) {
         recenica[a] !== "o" ||
         recenica[a] !== "u" 
     ){novaRecenica += recenica.toUpperCase();}
-    else if (recenica.length[a-1] === "") {
+    else if (a === recenica.length + 1) {
 novaRecenica += "."
 }
  else {
@@ -114,6 +114,7 @@ let petiZadatak2 = ""
 for (u = 1; u < petiZadatak; u++) {
       petiZadtak2 += petiZadatak[u]
     if (petiZadatak === petiZadatak2) {
-    console.log("NIJE");
-    } else if(peti){}
-}
+    console.log("PALINDROM!");
+    continue;
+    }
+} console.log("Data recenica NIJE PALINDROM");
