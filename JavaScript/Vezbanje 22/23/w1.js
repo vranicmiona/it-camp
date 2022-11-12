@@ -105,10 +105,10 @@ for (w = 1; w < cetvrtiZadatak.length; w++) {
     } else if(mala === velika) {
         console.log("PODJEDNAKO IH IMA");
     } 
-}
+} console.log("U datom stringu ima slova " + velika + " velikih slova" + " , i ima" + mala + " malih slova.");
 
 // 5. Proveriti da li je uneti string palindrom (potpuno isti kada se cita od pozadi).
-// Npr. "anavolimilvana" je palindrom.
+// Npr. "anavolimilovana" je palindrom.
 const petiZadatak = "zasutrasupredvidjenevezbe";
 let petiZadatak2 = ""
 for (u = 1; u < petiZadatak; u++) {
@@ -117,4 +117,3 @@ for (u = 1; u < petiZadatak; u++) {
     console.log("NIJE");
     } else if(peti){}
 }
-
