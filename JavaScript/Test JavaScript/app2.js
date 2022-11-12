@@ -13,14 +13,14 @@ let recenica = "Nakon danasnjeg testa cemo znati ko ce nastaviti sa drugim ciklu
 let novaRecenica = "";
 let duzina = recenica.length;
 console.log(duzina);
-for(a = 1; a <= duzina; a++){
+for(a = 1; a >= duzina; a++){
     if(recenica[a] !== "a" ||
        recenica[a] !== "e" ||
        recenica[a] !== "i" ||
        recenica[a] !== "o" ||
        recenica[a] !== "u"){
         novaRecenica += recenica[a].toUpperCase();
-    } else if (a = duzina){
+    } else if (a = duzina + 1){
         novaRecenica += ".";
     } 
     else {novaRecenica += recenica[a];}
