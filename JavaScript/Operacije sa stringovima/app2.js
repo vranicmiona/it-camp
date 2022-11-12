@@ -48,7 +48,7 @@ let second = "";
 for (a = 0; a < first.length; a++) {
     if (a === first.length - 1 || first[a + 1] === "." || first[a + 1] === ",") {
         second += first[a].toUpperCase();
-    } else if (recenica[a + 1] === " ") {
+    } else if (first[a + 1] === " ") {
         second += first[a].toUpperCase();
     } else {
         second += first[a];

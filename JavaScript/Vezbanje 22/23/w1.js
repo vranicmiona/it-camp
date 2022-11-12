@@ -13,7 +13,7 @@ for (a = 0; a <= recenica.length; a++) {
         recenica[a] !== "u" 
     ){novaRecenica += recenica.toUpperCase();}
     else if (a === recenica.length + 1) {
-novaRecenica += "."
+novaRecenica += ".";
 }
  else {
 novaRecenica += recenica[a];
