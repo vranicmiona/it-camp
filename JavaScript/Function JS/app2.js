@@ -53,3 +53,22 @@ console.log = (kvadtarBroja(+prompt("Uneiste broj.")));
        console.log(mail(14, 39));
        console.log(mail(9, 90));
  
+// 3.Zadatak sa testa 
+function novarecenica(recenica){
+    let recenica2 = ""
+    for (let s = 0; s <= recenica.length; s++){
+        if(s === recenica.length){
+            recenica2 += ".";
+        }
+    else if (recenica[s] === "a" ||
+    recenica[s] === "i" ||
+    recenica[s] === "o" ||
+    recenica[s] === "u" ||
+    recenica[s] === "e"){
+        recenica2 += recenica.toUpperCase();
+    }else{
+        recenica2 += recenica;
+    }
+    }
+    return recenica2;
+}; console.log(novaRecenica("Pocelo je svetsko prvenstvo u fudbalu!"));
