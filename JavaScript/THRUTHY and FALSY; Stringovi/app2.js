@@ -28,7 +28,7 @@ prikazemo jedan te isti string u istom redu:"
 console.log(string5);
 // \n prikazive datog stringa gde god da ga iskoritimo
 const strng6 = "Ovo ce da bude jedan \ndugacki string cela poenta je da prikazemo \njedan te isti \nstring u istom redu:";
-// Postoje tri metode za ekstraktovanje(dela) stringa:
+// Postoje tri metode za ekstraktovanje(uzimanje dela stringa) stringa:
 // 1. slice(start, end) end nije ukljucen u rande (opseg)
 // 2. substring(start, end) razlika u odnosu na slice je da substring ne prihvata negativne indexe.
 // 3. substr(prvi argument predtavlja start, length duzina do koliko ce da traje to parce stringa)
@@ -38,5 +38,3 @@ const string7 = "Danas je bilo lepo vreme."
 console.log(string7.slice(-6, -1));
 console.log(string7.substring(0, 5));
 console.log(string7.substr(0, 8)); // kreni od 0, a njena duzina ce da bude 8
-
-

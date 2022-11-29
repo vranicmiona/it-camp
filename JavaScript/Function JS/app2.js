@@ -5,7 +5,7 @@ if (NaN(a)){
 } else {
     return "Kavdrat broja iznosi " + a**2
 }} 
-console.log = (kvadtarBroja(+prompt("Uneiste broj.")));
+console.log = (kvadtarBroja(+prompt("Unesite broj.")));
 
 // 2. Arrow function:
 // const myFunction = () => {
@@ -14,8 +14,8 @@ console.log = (kvadtarBroja(+prompt("Uneiste broj.")));
         return br1 * br2;
     };
     console,log(proizvodDvaBroja(2, 16));
-    // Ako Arrow funkcija iam samo jedan parametar nije neophodno okrtuziti ga zagradama 
-    // Ako je funkcija jednostavna, tj. ako odmah varac neki jednostavn izraz onda sama sintaksa izgleda kraca
+    // Ako Arrow funkcija ima samo jedan parametar nije neophodno okruziti ga zagradama 
+    // Ako je funkcija jednostavna, tj. ako odmah vraca neki jednostavan izraz onda sama sintaksa izgleda kraca
     // zapravo nije neophodno koristiti {} ili return keyword
     const kvadratBroja = broj => broj ** 2;
 
@@ -59,8 +59,7 @@ function novarecenica(recenica){
     for (let s = 0; s <= recenica.length; s++){
         if(s === recenica.length){
             recenica2 += ".";
-        }
-    else if (recenica[s] === "a" ||
+        }else if (recenica[s] === "a" ||
     recenica[s] === "i" ||
     recenica[s] === "o" ||
     recenica[s] === "u" ||
