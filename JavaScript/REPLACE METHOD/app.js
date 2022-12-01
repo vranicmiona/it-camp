@@ -33,6 +33,8 @@ console.log(c);
 // Napomena.
 // Sve string metode prave novu promenljivu (jer su stringovi immutable vrednosti).
 
+// Domaci zadatak: 
+
 // Napraviti funkciju koja kod stringa koji predstavlja argument funkcije ispituje sledece:
 // Ako dati string ima vecu duzinu od 9:
 // Pravi novi string koji ce biti isecak od pola do kraja originalnong stringa. Nakon toga novom stringu menjamo sva mala slova "a" sa velikim slovom "B", i funkcija ce vratiti dati novi string koji je savstavljen od "Ovo je novodobjena recenica," i posledjneg izmenjenog isecka.
@@ -40,61 +42,29 @@ console.log(c);
 // Funkcija treba vratiti poruku:
 // argument + {njena duzina} + "nedovoljno za dalje ispitivajne".
 
-const mojaFunkcija = function (ispitivanaRecenica){
-    if(ispitivanaRecenica > 9){
-      let polaDuzine = ispitivanaRecenica.length % 2 === 0 ? 
-      ispitivanaRecenica.length / 2 : Math.ceil(recenica.length / 2);
-      const isecak = ispitivanaRecenica(polaDuzine, ispitivanaRecenica.length);
-      const novaRE = ispitivanaRecenica.replace(/a/g, "B");
-      const kraj = "Ovo je novo dobijena reecnica ".concat(novaRE);
-      return kraj;
-    } else {
-      const novaRE = ispitivanaRecenica.concat(ispitivanaRecenica.length, "nedovoljno za ispisivanje");
-      return novaRE;
-    }
-};
-console.log(mojaFunkcija("Kraj casa"));
-console.log(mojaFunkcija("Kraj drugog casa rada sa stringovima."));
+const domaci = () => {
+  const recenica = prompt("Unesite neku recenicu: ")
+  const prva = recenica.toUpperCase();
+  const druga = recenica.toLowerCase();
+  let polaDuzina;
+// if(recenica.length % 2 === 0){
+//   polaDuzine = recenica.length / 2;
+// }else{
+//   polaDuzina = Math.round(recenica.length / 2 === 0); // i u prvoj i drugoj metodi ce da nam bude ceo broj sto ce nam trebati za drugi deo zadatka
 
-// Domaci zadatak:
-// Napraviti funkciju koja trazi od korisnika da unese neku recenicu, zatim funkcija vraca ,
-// datu recenicu u vise oblika (spojenu u jedan string).
-// 1. Recenicu ispisanu velikim slovima
-// 2. Recenicu ispisanim slovima
-// 3.Pola recenice ispisano velikim slovima, pola recenice ispisano malim slovima
-// 4. Ako se u recenici nadje rec skola neka bude zamenjena sa fakultet 
-// Neka bude ispisano 10 karaktera poslednjih 10 karaktera unete recenice
-const domaci = function () {
-  let nekaRecenica = prompt("Unesite neku recenicu: ");
-  let duzina = nekaRecenica.length;
-  let polaDuzine = duzina / 2;
-  let prviDeo = nekaRecenica.substr(0, polaDuzine).toUpperCase();
-  let drugiDeo = nekaRecenica.substr(polaDuzine, duzina).toLowerCase();
+polaDuzina = recenica.length % 2 === 0 ? recenica.length / 2 : Math.round(recenica.length / 2);
+const prvaPol = recenica.slice(0, polaDuzina).toUpperCase()// ne uzima polaDuzine kao vrednost samo prvu
+const drugaPol = recenica.substring(polaDuzina, recenica.length).toLowerCase() // ne mora da ide do kraja, ne mora recenica.length
+// const treca = prvaPol + drugaPol;
+const treca = prvaPol.concat(drugaPol);
+const cetvrta = recenica.replace(/skola/gi, "fakultet");
+const peta = recenica.substr(0, 10);
+const sesta = recenica.slice(-10);
+return (
+  prva.concat("\n", druga, "\n", treca, "\n", cetvrta, "\n", peta, "\n", sesta)
+);}
+   console.log(domaci());
 
-  let prva = nekaRecenica.toUpperCase();
-  let druga = nekaRecenica.toLowerCase();
-  let treca = prviDeo.concat(drugiDeo);
-  let cetvrta = nekaRecenica.replace(/skola/gi, "fakultet");
-  let peta = nekaRecenica.substring(0, 10);
-  let sesta = nekaRecenica.slice(-10, duzina);
-  return prva.concat(
-    "\n",
-    druga,
-    "\n",
-    treca,
-    "\n",
-    cetvrta,
-    "\n",
-    peta,
-    "\n",
-    sesta
-  );
-};
-
-console.log(domaci());
-
-let recenica = "Recenica koju treba iseci.";
-
-let prva = recenica.slice(4, 8);
-let druga = recenica.substring(4, 8);
-let treca = recenica.substr(4, 10)
+  // Izostavljajuci drugi argument kod slice() metode uzima isecak do kraja stringa.
+  const isecak = "Recenica za primer slice metode jednim argumentom".slice(12);
+  console.log(isecak);
