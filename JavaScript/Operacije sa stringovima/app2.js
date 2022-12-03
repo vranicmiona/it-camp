@@ -17,10 +17,10 @@ console.log(petak);
 
 const recenica0 = "zelIMO DAtu RECEnicu PriKAZATI malIm sovima."
 let recenica1 = recenica0.toUpperCase()
-console.log(recenica1);
-let recenica2 = recenica1.toLowerCase()
+// console.log(recenica1);
+let recenica2 = recenica0.toLowerCase()
 // console.log(recenica2);
-console.log("Recenica maim slovima ce biti: \n" + recenica1 + "dok ce recenica velikim slovima biti: \n" + recenica2);
+console.log("Recenica velikim slovima ce biti: \n" + recenica1 + "dok ce recenica malim slovima biti: \n" + recenica2);
 
 // Ispisati novu recenicu gde ce svaka rec pocinjati velikim slovom
 const recenica = "sledece subote cemo imati test koji predstavlja kraj prvog ciklusa. nakon toga cemo videti ko sve nastavlja sa drugim ciklusom it campa."

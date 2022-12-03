@@ -9,13 +9,13 @@ function zbirTriPet() {
     const zbir = 3 + 5;
     return zbir;
     // return 25 sve nakon returna se zamenjuje u function scopru 
-} console.log(zbirTriPet);
+} console.log(zbirTriPet());
 
 // Pravimo funkcija koja sabira dva broja
 function zbriDvaBroja(par1, par2) {
 // par1 i par2 predstavlaju parametre funkcije
 return par1 + par2;
-} console.log(zbriDvaBroja(5, 4));
+} console.log(zbriDvaBroja(9, 4));
 // Defaultna vrednost nekog parametra
 // Napraviti funkciju koja vraca zbir kvadrata dva broja. Ako se izostavi drugi argument funkcija ga racuna kao 0.
 // I nacin:
@@ -23,7 +23,8 @@ function zbirKvadrata(a, b) {
     if (b === undefined) {
         return a ** 2 + b ** 2;
     }
-    }console.log(zbirKvadrata(2, 3));
+    };
+    console.log(zbirKvadrata(2, 7));
     console.log(zbirKvadrata(2));
     // II nacin: DEFAULTNA VREDNOST SE STAVLJA NA KRAJU
     function zbirKvadrata3 (a, b = 0) {
@@ -47,4 +48,4 @@ function zbirKvadrata(a, b) {
         }
     } 
     console.log(povrsina(4, 6));
-    console.log(povrsina(4, 4));
+    console.log(povrsina(5, 5));
