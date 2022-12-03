@@ -68,3 +68,24 @@ return (
   // Izostavljajuci drugi argument kod slice() metode uzima isecak do kraja stringa.
   const isecak = "Recenica za primer slice metode jednim argumentom".slice(12);
   console.log(isecak);
+
+  // Domaci zadatak:
+  // Napisi program koji ucitava cetvorocifreni broj i ispisuje zbir svih cifara tog broja:
+  const sumaCifara = (broj) => {
+    if(isNaN(broj) || (broj < 1000 || broj > 9999)){
+      return "Argument nije korektan"
+    } else {
+      const cifraJedinice = broj % 10;
+      const cifraDesetica = Math.trunc((broj % 100) / 10);
+      const cifraStotina = Math.trunc((broj % 1000)/100);
+      const cifraHiljada = Math.trunc((broj / 1000));
+      return cifraJedinice + "\n"
+       + cifraStotina + "\n"
+       + cifraHiljada + "\n"
+    }
+  };
+  console.log(sumaCifara("afiufhasonci"));
+  console.log(sumaCifara(100));
+  console.log(sumaCifara(3459));
+
+1234

@@ -4,8 +4,8 @@
 
 // Metode // predsvalja neku (funkciju) koja obavlja neki posao, primenjujemo ih za datu promenljivu
 // length metoda nam sluzi za dobijanje duzine stringa.
-const rcenica ="Kamerun dobijamo!";
-console.log(rcenica.length);
+const recenica ="Kamerun dobijamo!";
+console.log(recenica.length);
 
 // Pristupanje odredjenom karakteru ide preko indexa.
 // Indexiranje ide od (0 do ukupna duzina stringa - 1)
