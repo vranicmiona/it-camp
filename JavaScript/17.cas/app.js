@@ -31,7 +31,7 @@ const pozicija3 = recenica2.indexOf("Omar");
 console.log(pozicija3);
 // Drugi argument predtavlja poziciju od koje krecemo sa trazenjem datog stringa
 const pozicija4 = recenica2.indexOf("mesec", 30);
-console.log(pozcija4);
+console.log(pozicija4);
 
 // lastIndexOf() metoda nam vraca poslednju poziciju gde se zapravo nalazi poslati argument (jedan ili vise karaktera) kada se radi o nekom stringu
 const pozicija6 = recenica2.lastIndexOf("mesec");
