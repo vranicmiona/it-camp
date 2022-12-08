@@ -55,3 +55,5 @@ function position(sentence) {
 } console.log(position("'ko osvaja' svetsko prvenstvo ove godine. Stvarno 'ko osvaja'"));
 console.log(position(" svetsko prvenstvo ove godine. Stvarno 'ko osvaja'"));
 console.log(position(" svetsko prvenstvo ove godine. Stvarno"));
+
+// Domaci 1.
