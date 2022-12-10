@@ -94,8 +94,8 @@ const prvihN = (recenica8, n) => {
     } else{
         return recenica8.substr(0, n);
     }
-}; console.log(prvihN("Treba vratititi prvihN 10 karaktera.", 10));
-console.log(prvihN("Treba vratititi prvihN 100 karaktera.", 100));
+}; console.log(prvihN("Treba vratiti prvihN 10 karaktera.", 10));
+console.log(prvihN("Treba vratiti prvihN 100 karaktera.", 100));
 
 // Zadatak 7.
 // Proveriti da li je uneti string palindrom (potpuno je isti kada se čita od pozadi).
@@ -116,10 +116,55 @@ console.log(prvihN("Treba vratititi prvihN 100 karaktera.", 100));
 //     }
 //     return palindrom2
 // }; console.log(mojaFunkcija("anavolimilovana"));
-
+// I NACIN:
 function mojaFunkcija(palindrom){
   let recenica1 = palindrom.split("");
   let recenica2 = recenica1.reverse();
   return palindrom === recenica2.join("") ? "PALINDROM" : "Nije palindrom"
 }; console.log(mojaFunkcija("anavolimilovana"));
 console.log(mojaFunkcija("dobardan"));
+// II NACIN:
+function isPalindrom(rec){
+  let novaRec = ""
+  for(let i = rec.length - 1; i >= 0; i--){ // pravljenje obrnutog stringa
+    novaRec += rec[i]; // imamo novu rec koja je obrnuta u ovom koraku
+  } 
+  if(rec === novaRec) {
+    return "Data rec jeste palindrom!"
+  } else{
+    return "Data rec nije palindrom!"
+  }
+}; console.log(isPalindrom("anavolimilovana"));
+
+// Zadatak 8.
+const prvaIPoslednja = function(recenica) {
+const pozicijaPrvogRazmaka = recenica.indexOf(" "); // izdvojio nam se prvi razmak
+const prvaRec = recenica.slice(0, pozicijaPrvogRazmaka); // izdvojila se rec bez razmaka
+const pozicijaPoslednjegRazmaka = recenica.lastIndexOf(" ");
+const poslednjaRec = recenica.slice(pozicijaPoslednjegRazmaka + 1);
+const recenica2 = prvaRec.concat(" ", poslednjaRec);
+return recenica2;
+}; console.log(prvaIPoslednja("Hocemo prvu i poslednju rec."));
+
+// Zadatak 9.
+const podString = (string, pocetak, duzina) => {
+  const noviString = string.substr(pocetak, duzina)
+  return noviString;
+};
+console.log("Recenica kojoj cemo uzeti deo stringa", 5, 8);
+
+// Zadatak 10:
+// funkcija treba da vrati string da se zanemari karakter koji unosimo kao argument
+function nasaFunkcija(rec, znak){
+  // const noviString = rec.replace(znak, "");
+noviString = "";
+for(i = 0; i < rec.length; i++){
+  if(rec !== znak){
+    noviString += rec[i];
+  }
+}
+  return noviString;
+  }; console.log(nasaFunkcija("Recenica sa slovom a.", "a"));
+
+  // Domaci zadatak:
+  
