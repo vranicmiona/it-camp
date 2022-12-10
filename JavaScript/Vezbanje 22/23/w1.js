@@ -111,7 +111,7 @@ for (w = 1; w < cetvrtiZadatak.length; w++) {
 // Npr. "anavolimilovana" je palindrom.
 const petiZadatak = "zasutrasupredvidjenevezbe";
 let petiZadatak2 = ""
-for (u = 1; u < petiZadatak; u++) {
+for (u = 0; u < petiZadatak; u++) {
       petiZadtak2 += petiZadatak[u]
     if (petiZadatak === petiZadatak2) {
     console.log("PALINDROM!");

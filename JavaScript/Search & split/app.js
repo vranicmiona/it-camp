@@ -56,4 +56,14 @@ function position(sentence) {
 console.log(position(" svetsko prvenstvo ove godine. Stvarno 'ko osvaja'"));
 console.log(position(" svetsko prvenstvo ove godine. Stvarno"));
 
-// Domaci 1.
+// Domaci zadatak:
+// Napisati funkciju koja ima ceo broj kao parametar i koja kao rezultat vraca zbir cifaratog celog broja. Npr ako parametar iznosi 367, funkcija vraca broj 16 (3+6+7).
+function zbirCifara(number){
+let zbir = 0;
+while(number > 0){
+    zbir += number % 10;
+    broj = Math.floor(broj / 10);
+}
+return zbir;
+}
+document.write(zbirCifara(367));
