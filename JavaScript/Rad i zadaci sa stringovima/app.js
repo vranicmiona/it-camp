@@ -101,18 +101,25 @@ console.log(prvihN("Treba vratititi prvihN 100 karaktera.", 100));
 // Proveriti da li je uneti string palindrom (potpuno je isti kada se čita od pozadi).
 // Npr. 'anavolimilovana' je palindrom.
 
+// function mojaFunkcija(palindrom){
+//     let palindrom2 = "";
+//    if(palindrom.charAt(palindrom.length)){
+//     for(i = 0; i < palindrom.length; i++){
+//         palindrom2 += palindrom[i];
+//         return palindrom2
+//     } 
+//    }
+//     else if(palindrom === palindrom2){
+//         return "PALINDROM"
+//     }else{
+//         return "Nije palindrom"
+//     }
+//     return palindrom2
+// }; console.log(mojaFunkcija("anavolimilovana"));
+
 function mojaFunkcija(palindrom){
-    let palindrom2 = "";
-   if(palindrom.charAt(palindrom.length)){
-    for(i = 0; i < palindrom.length; i++){
-        palindrom2 += palindrom[i];
-        return palindrom2
-    } 
-   }
-    else if(palindrom === palindrom2){
-        return "PALINDROM"
-    }else{
-        return "Nije palindrom"
-    }
-    return palindrom2
+  let recenica1 = palindrom.split("");
+  let recenica2 = recenica1.reverse();
+  return palindrom === recenica2.join("") ? "PALINDROM" : "Nije palindrom"
 }; console.log(mojaFunkcija("anavolimilovana"));
+console.log(mojaFunkcija("dobardan"));
