@@ -166,5 +166,14 @@ for(i = 0; i < rec.length; i++){
   return noviString;
   }; console.log(nasaFunkcija("Recenica sa slovom a.", "a"));
 
-  // Domaci zadatak:
-  
+// Domaci zadatak:
+// Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
+function funkcija(recenica, znak){
+  let recenica2 = "";
+if(znak > recenica.length){
+  return recenica;
+} else if(recenica.substring(recenica.length - 1, znak)){
+return recenica2 += recenica; 
+} return recenica2;
+}; console.log(funkcija("Danas pada kisa i hladno je vreme.", 5));
+console.log(funkcija("Za nedelju dana bice jos hladnije i pocece sneg da pada!", 150));
