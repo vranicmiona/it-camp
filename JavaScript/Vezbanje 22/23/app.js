@@ -60,3 +60,66 @@ const c = 5;
 const s = (a + b + c) / 2;
 const total = Math.sqrt(s * (s - a + (s - b) + (s - c)));
 console.log(total);
+
+// 6. Write a JavaScript function to check whether an `input` is a string or not. Go to the editor
+// Test Data :
+// console.log(is_string('w3resource'));
+// true
+// console.log(is_string([1, 2, 4, 0]));
+// false
+
+const string = function (_a) {
+  if ((_a >= "a" && _a <= "z") || (_a >= "A" && _a <= "Z")) {
+    return true;
+  } else if (_a >= "0" >= _a <= "9") {
+    return false;
+  }
+};
+console.log(string("gfdyugfyudgff"));
+console.log(string([1, 2, 3, 4]));
+
+// 7. Write a JavaScript function to check whether a string is blank or not. Go to the editor
+// Test Data :
+// console.log(is_Blank(''));
+// console.log(is_Blank('abc'));
+function blankString(string2) {
+  if (string2.length === 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
+console.log(blankString(""));
+console.log(blankString("Miona Vranic"));
+
+// 8. Write a JavaScript function to extract a specified number of characters from a string.
+const extract = (string3) => {
+  let string4 = string3.slice(0, string3.length);
+  return string4;
+};
+console.log(extract("Recenica cao kako si, lalalllala.", 4));
+
+// 9. Write JavaScript function to parameterize a string:
+// console.log(string_parameterize("Robin Singh from USA."));
+// "robin-singh-from-usa
+
+const string5 = (argument) => {
+  const string6 = argument.toLowerCase(/" "/gi);
+  const string7 = string6.replace(/\s/g, "-"); // \s oznaka za space
+  return string7;
+};
+console.log(string5("Ja sam Miona Vranic iz Srbije"));
+
+// 10. Write a JavaScript function to capitalize the first letter of a string.
+function capitalize(slovo) {
+  const string8 = slovo.charAt(0).toUpperCase(); // + slovo.slice(1); i resi se odjednom
+  const strng9 = slovo.slice(1, slovo.length);
+  const string10 = string8.concat(strng9);
+  return string10;
+}
+console.log(capitalize("javascript je programski jezik"));
+
+// 11. Write a JavaScript function to capitalize the first letter of each word in a string
+const firstLetter = (word) => {
+  let duzina = word.length;
+};
