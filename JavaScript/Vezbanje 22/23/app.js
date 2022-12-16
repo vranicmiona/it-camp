@@ -122,4 +122,14 @@ console.log(capitalize("javascript je programski jezik"));
 // 11. Write a JavaScript function to capitalize the first letter of each word in a string
 const firstLetter = (word) => {
   let duzina = word.length;
+  let word2 = "";
+  for (i = 0; i < duzina; i++) {
+    if (word[i] === 0) {
+      word2 += word[i].toUpperCase();
+    } else if (word[i - 1] === " ") {
+      word2 += word[i].toUpperCase();
+    }
+  }
+  return word2;
 };
+console.log(firstLetter("caoo ljudi ja sam miona vranic!"));
