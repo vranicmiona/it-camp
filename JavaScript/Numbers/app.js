@@ -47,7 +47,7 @@ console.log(r); // 255
 
 // Pored osnovnog nacina dodeljivanja vrednisti nekoj promenljivoj mozmo uraditi preko new keyworda:
 const k = 22;
-const l = new Number(33); // nije dobra praksa
+const l = new Number(33); // nije dobra praksa, mora da se koristi kod Setova kod mapa
 console.log(k);
 console.log(l);
 console.log(typeof k); // number
