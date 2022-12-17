@@ -141,7 +141,7 @@ function isPalindrom(rec) {
 }
 console.log(isPalindrom("anavolimilovana"));
 
-// Zadatak 8.
+// Zadatak 8. Za uneti string A treba kreirati novi string B koji se sastoji od prve i poslednje reči (odvojenih razmakom) unetog stringa. Npr. za A='Svuda pođi, kući dođi', dobija se B='Svuda dođi'. Podrazumeva se da uneti string nema vodeće ili prateće razmake
 const prvaIPoslednja = function (recenica) {
   const pozicijaPrvogRazmaka = recenica.indexOf(" "); // izdvojio nam se prvi razmak
   const prvaRec = recenica.slice(0, pozicijaPrvogRazmaka); // izdvojila se rec bez razmaka
@@ -152,7 +152,7 @@ const prvaIPoslednja = function (recenica) {
 };
 console.log(prvaIPoslednja("Hocemo prvu i poslednju rec."));
 
-// Zadatak 9.
+// Zadatak 9. Uzima se deo Stringa jedne recenice extraktovanje dela stringa
 const podString = (string, pocetak, duzina) => {
   const noviString = string.substr(pocetak, duzina);
   return noviString;
@@ -181,7 +181,7 @@ const task = (recenica10, n) => {
 };
 console.log(task("Pera ima devojku", 5));
 
-// Zadatak 11.
+// Zadatak 11. Uneti string se šifruje tako što se zamenjuje redosled znacima u stringu. Prvi i drugi zamene mesta, zatim 3. i 4. zamene mesta itd. Npr. za string 'Pera ima devojku', treba dobiti 'ePari amd vejouk'. Ako string ima neparan broj znakova, poslednji znak se ne dira
 function zamenaMesta(string) {
   const duzina = string.length;
   let recenica11 = "";
@@ -211,8 +211,7 @@ function menjanje(recenicab) {
 }
 console.log(menjanje("Pera ima devojku."));
 
-// Zadatak 12.
-
+// Zadatak 12. Unose se dva stringa A i B. Kreirati novi string kao kombinaciju stringova A i B, tako što se kombinuju prvi sa prvim, drugi sa drugim, treći sa trećim znakom itd. Ako je jedan string duži od drugog, na kraju samo dodati znakove viška. Npr. za stringove "PERA" i "sladoled" dobija se string "PsElRaAdoled"
 const drugi = (rec5, rec2) => {
   let rec3 = "";
   const duzina1 = rec5.length;
