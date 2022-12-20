@@ -127,14 +127,14 @@ console.log(parseInt({})); // NaN
 console.log(parseFloat("23")); // 23
 console.log(typeof parseFloat("23")); // number
 // Krajnji razmaci ne prave problem
-console.log(parseFloat(" 23         ")); // 23
-console.log(parseFloat("23+5")); // NaN
+console.log(parseFloat(" 23.55         ")); // 23.55
+console.log(parseFloat("23+5")); // 23
 // Razmaci nisu dozvoljeni kod parseFloat metode
-console.log(parseFloat("23 56")); // NaN
+console.log(parseFloat("23 56")); // 23
 console.log(parseFloat("23.56")); // 23.56
-console.log(parseFloat("23,78")); // NaN
+console.log(parseFloat("23,78")); // 23
 console.log(parseFloat("asjhgs")); // NaN
-console.log(parseFloat(true)); // 1
-console.log(parseFloat(false)); // 0
-console.log(parseFloat([])); // 0
+console.log(parseFloat(true)); // NaN
+console.log(parseFloat(false)); // NaN
+console.log(parseFloat([])); // NaN
 console.log(parseFloat({})); // NaN
