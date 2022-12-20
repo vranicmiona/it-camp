@@ -133,3 +133,21 @@ const firstLetter = (word) => {
   return word2;
 };
 console.log(firstLetter("caoo ljudi ja sam miona vranic!"));
+
+// 12. Write a JavaScript function that takes a string which has lower and upper case letters as a parameter and converts upper case letters to lower case, and lower case letters to upper case.i
+function velikaMala(slova) {
+  return slova.replace(/([a-z]+)|([A-Z]+)/g, function (slovaa, uslov) {
+    return uslov ? slovaa.toUpperCase() : slovaa.toLowerCase();
+  });
+}
+console.log(velikaMala("AAAbbbAA"));
+
+// 13. Write a JavaScript function to convert a string into camel case.
+const camelcase = (recenica1) => {
+  return recenica1.replace(/\W+(.)/g, function (slova, uslov) {
+    return uslov.toUpperCase();
+  });
+};
+console.log(camelcase("Javascript excercise"));
+console.log(camelcase("JavaScript-Excercise"));
+console.log(camelcase("Javascript Excercise"));

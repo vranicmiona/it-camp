@@ -35,20 +35,20 @@ console.log(x.valueOf());
 // toString() i valueOf() metode vaze za sve tipove podataka u JavaScriptu.
 
 // 1. Napraviti funkciju koja prima jedan argument (broj) i vraca poruku da li je dati argument palindrom
-function isPalindrom(broj) {
-  const stringBroja = broj.toStringBroja();
-  const obrnutiBroj = "";
-  for (i = stringBroja.length - 1; i >= 0; i++) {
-    obrnutiBroj += stringBroja[i];
-  }
-  if (stringBroja === obrnutiBroj) {
-    return `Obrnuti broj jeste palindrom`;
-  } else {
-    `Obrnuti broj nije palindrom`;
-  }
-}
-console.log(isPalindrom(1234));
-console.log(isPalindrom(12321));
+// function isPalindrom(broj) {
+//   const stringBroja = broj.toString();
+//   const obrnutiBroj = "";
+//   for (i = stringBroja.length - 1; i >= 0; i++) {
+//     obrnutiBroj += stringBroja[i];
+//   }
+//   if (stringBroja === obrnutiBroj) {
+//     return `Obrnuti broj jeste palindrom`;
+//   } else {
+//     `Obrnuti broj nije palindrom`;
+//   }
+// }
+// console.log(isPalindrom(1234));
+// console.log(isPalindrom(12321));
 //2.  Napraviti funkciju koja ocekuje trocifren broj, a vraca dvocifren (iskljuci cifra desetice).
 const izbrisiDruguCifru = (brojj) => {
   const duzina = brojj.toString().length;
@@ -65,6 +65,25 @@ console.log(izbrisiDruguCifru(6));
 
 // Domaci zadatak:
 // Napraviti funkciju koja ocekuje cetvorocifren broj, a vraca broj kome su zamenjene prva i treca cifra i druga i cetvrta cifra. 4752 5247
+const mojaFunkcija = (cetvorocifrenBroj) => {
+  const stringBrojaa = cetvorocifrenBroj.toString();
+  const duzina = stringBrojaa.length;
+  let noviString = "";
+  for (let i = 0; i < duzina; i++) {
+    if (duzina % 2 === 1 && i === duzina - 1) {
+      noviString += stringBrojaa[i];
+    } else if (duzina !== 4) {
+      return "Mora sadrzati cetiri cifre!";
+    } else if (i % 2 === 0) {
+      noviString += stringBrojaa[i + 1];
+    } else if (i % 2 === 1) {
+      noviString += stringBrojaa[i - 1];
+    }
+  }
+  return noviString;
+};
+console.log(mojaFunkcija(1234));
+console.log(mojaFunkcija(123));
 
 // Global JavaScript methods //
 
