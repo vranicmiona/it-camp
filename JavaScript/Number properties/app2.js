@@ -16,53 +16,64 @@ console.log(najveci(-22, -25, -55));
 // 2. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
 
 const value = (int1, int2) => {
+  let i;
   counter1 = 0;
   counter2 = 0;
-  for (i = 0; i <= int1; i++) {
-    return counter1++;
-  }
-  for (c = 0; c <= int2; c++) {
-    return counter2++;
-  }
-  if (counter1 < counter2) {
-    return `Prvi broj je blizi broju 100.`;
-  } else if (counter2 < counter1) {
-    return `Drugi broj je blizi broju 100.`;
+  if (int1 >= 100) {
+    for (i = int1; i >= 100; i--) {
+      return counter1++;
+    }
+  } else
+    for (i = int1; i <= 100; i++) {
+      return counter1++;
+    }
+  if (int2 >= 100) {
+    for (i = int2; i >= 100; i--) {
+      return counter2++;
+    }
+  } else
+    for (i = int2; i <= 100; i++) {
+      return counter2++;
+    }
+  if (counter1 > counter2) {
+    return `Drugi je blizi broju 100!`;
+  } else if (counter2 > counter1) {
+    return `Prvi broj je blizi sto!`;
+  } else {
+    return `Brojevi su jednaki!`;
   }
 };
-console.log(value(101, 200));
-console.log(value(-14, 55));
+console.log(value(12, 100));
+console.log(value(102, 55));
+console.log(value(12, 12));
+console.log(value(-34, -56));
 
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
-function dvaBroja(prvi, drugi) {
-  if (40 <= prvi <= 60 && 40 <= drugi <= 60) {
-    return `Brojevi se nalaze u opsegu 40 i 60. `;
-  } else if (70 <= prvi <= 100 && 70 <= drugi <= 100) {
-    return `Brojevi se nalaze u ospegu 70 i 100.`;
+function firstTask(num1, num2) {
+  if (
+    ((num1 >= 40 && num1 <= 60) || (num1 >= 70 && num1 <= 100)) &&
+    ((num2 >= 40 && num2 <= 60) || (num2 >= 70 && num2 <= 100))
+  ) {
+    return true;
   } else {
-    return `Brojevi ne pripadaju ni jednom opsegu.`;
+    return false;
   }
 }
-console.log(dvaBroja(55, 58));
-console.log(dvaBroja(71, 100));
-console.log(dvaBroja(50, 98));
+console.log(firstTask(33, 89)); // false
+console.log(firstTask(44, 55)); // true
+console.log(firstTask(78, 75)); // true
+console.log(firstTask(90, 100)); // true
 
 // 34. Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
-function veciBroj(broj1, broj2) {
-  if (broj1 === broj2) {
-    return `Vrednosti su jednake`;
-  }
-  if (broj1 >= 40 && broj1 <= 60) {
-    return broj1;
-  } else if (broj2 >= 70 && broj2 <= 100) {
-    return broj2;
-  }
-  if (broj1 > broj2) {
-    return broj1;
-  } else if (broj2 > broj1) {
-    return broj2;
+function dvaBroja(num1, num2) {
+  if ((num1 >= 40 && num1 <= 60) || (num2 >= 40 && num2 <= 60)) {
+    return `Brojevi se nalaze u opsegu 40-60!`;
+  } else if (num1 === num2) {
+    return `Brojev su jednaki!`;
+  } else if (num1 !== isNaN || num2 !== isNaN) {
+    return `Moraju biti uneti brojevi!`;
   }
 }
-console.log(veciBroj(40, 41));
-console.log(veciBroj(40, 40));
-console.log(veciBroj(40, 55));
+console.log(dvaBroja(47, 56)); // brojevi se nalaze u osegu 40-60
+console.log(dvaBroja(60, 43)); // brojevi se nalaze u osegu 40-60
+console.log(dvaBroja("hduihd", 66)); // Moraju biti uneti brojevi
