@@ -107,7 +107,8 @@ console.log(obimKruga(6));
 
 // 2. Napraviti funkciju koja izracunava povrsinu kruga, gde
 //  precnik predstavlja argument funkcije.
-function povrsinaKruga(r) {
+function povrsinaKruga(R) {
+  const r = R / 2;
   const stepen = Math.pow(r, 2);
   const vrednost = stepen * Math.PI;
   return vrednost;
