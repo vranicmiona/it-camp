@@ -85,4 +85,16 @@ console.log(division(10, 15)); // 5
 console.log(division(5, 10)); // 5
 console.log(division(9, 4)); // 1
 
-// Write a JavaScript function to get the least common multiple (NZS) of two numbers.
+// Write a JavaScript function to get the least common multiple (NZS) of two numbers. (To znaci da je broj koji sadrzi oba broja veci i od jednog i drugog postavljamo petlju da je veci od veceg)
+
+function NZS(num1, num2) {
+  let veci = Math.max(num1, num2);
+  let trazeniBroj;
+  while (trazeniBroj >= veci) {
+    if (num1 % trazeniBroj === 0 && num2 % trazeniBroj === 0) {
+    }
+    trazeniBroj++;
+  }
+  return trazeniBroj;
+}
+console.log(NZS(4, 5));
