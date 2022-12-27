@@ -66,7 +66,7 @@ console.log(dvaTakmicara(40, 30, 40, 30));
 console.log(dvaTakmicara(35, 30, 40, 25));
 console.log(dvaTakmicara(49, 20, 20, 50));
 
-// Whrite JavaScript function to get the greatest common division (NZD) of two intagers.
+// Write JavaScript function to get the greatest common division (NZD) of two intagers.
 
 function division(num1, num2) {
   // const manji = num1 < num2 ? num1 : num2
@@ -91,7 +91,9 @@ function NZS(num1, num2) {
   let veci = Math.max(num1, num2);
   let trazeniBroj;
   while (trazeniBroj >= veci) {
-    if (num1 % trazeniBroj === 0 && num2 % trazeniBroj === 0) {
+    if (num1 % veci === 0 && num2 % veci === 0) {
+      trazeniBroj = veci;
+      break;
     }
     trazeniBroj++;
   }

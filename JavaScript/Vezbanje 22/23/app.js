@@ -151,3 +151,25 @@ const camelcase = (recenica1) => {
 console.log(camelcase("Javascript excercise"));
 console.log(camelcase("JavaScript-Excercise"));
 console.log(camelcase("Javascript Excercise"));
+
+// 14. Write a JavaScript function that takes a positive integer and reverse the binary representation of that integer. Finally return the decimal version of the binary string.
+// 80 --> 1010000 = (reverse) = 101 = 5; 31 --> 11111 = (reverse) = 11111 = 31
+function integer(int) {
+  return parseInt(int.toString(2).split("").reverse().join(""), 2);
+}
+console.log(integer(80)); // 5
+console.log(integer(31)); // 31
+
+// 15. Kebab case: "the-quick-brown-fox-jumps-over-the-lazy-dog"
+// Similar to snake case, above, except hyphens rather than underscores are used to replace spaces. It is also known as spinal case, param case, Lisp case in reference to the Lisp programming language, or dash case (or illustratively as kebab-case).
+// Write a JavaScript function to check a given string is in Kebab case or not
+const string1 = (recenica) => {
+  if (typeof recenica !== string) {
+    return `It must be string.`;
+  }
+  const pattern = /(\w+)-(\w)([\w-]*)/;
+  return pattern.test(recenica) && !recenica.includes("_");
+};
+console.log(string1("j"));
+console.log(string1("Java-Script"));
+console.log(string1("JavaScript"));
