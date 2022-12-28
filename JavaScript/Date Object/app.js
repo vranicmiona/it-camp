@@ -2,7 +2,7 @@
 
 // Kreiranje datuma //
 // Kreiranje datma mozemo izvrsiti na 4 nacina:
-// Datumski objekat sadrži vremenski podatak koji uključuje datum i vreme do preciznosti od jedne milisekunde (hiljaditi deo sekunde). U jednom satu ima 3,600,000 milisekundi, a u jednom danu 86.4 milisekundi
+// Datumski objekat sadrži vremenski podatak koji uključuje datum i vreme do preciznosti od jedne milisekunde (hiljaditi deo sekunde). U jednom satu ima 3,600,000 milisekundi, a u jednom danu 86.400.000 milisekundi
 
 // 1. new Date()
 const trenutnoVreme = new Date();
@@ -46,3 +46,11 @@ console.log(Date.parse(datumRodjenja));
 
 // Domaci: Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
 // "1999-05-24" i "2004-09-15"
+const dvaDatuma = (dan1, dan2) => {
+  const razlika = Date.parse(dan1) - Date.parse(dan2);
+  const razlika2 = Date.parse(dan2) - Date.parse(dan1);
+  const veci = dan1 > dan2 ? razlika : razlika2;
+  const total = veci / 86400000;
+  return total;
+};
+console.log(dvaDatuma("1999-05-24", "2004-09-15")); // 1941
