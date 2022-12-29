@@ -45,7 +45,7 @@ console.log(datum2);
 console.log(Date.parse(datumRodjenja));
 
 // Domaci: Napraviti funkciju koja racuna razliku u danima izmedju sledeca dva datuma:
-// "1999-05-24" i "2004-09-15"
+// "1999-05-24" i "2004-09-15" (1000 * 3600 * 24)
 const dvaDatuma = (dan1, dan2) => {
   const razlika = Date.parse(dan1) - Date.parse(dan2);
   const razlika2 = Date.parse(dan2) - Date.parse(dan1);
@@ -54,3 +54,8 @@ const dvaDatuma = (dan1, dan2) => {
   return total;
 };
 console.log(dvaDatuma("1999-05-24", "2004-09-15")); // 1941
+
+function funkcija(par1, par2) {
+  return (Date.parse(par1) - Date.parse(par2)) / 86400000;
+}
+console.log(funkcija("2004 sep 15", "99 may 24")); // 1941
