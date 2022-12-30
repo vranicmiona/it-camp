@@ -68,3 +68,56 @@ console.log(trenutnoVreme.toTimeString());
 // setDate()
 trenutnoVreme.setDate(19);
 console.log(trenutnoVreme);
+
+// Write a JavaScript program to display the current day and time in the following format.
+
+// const datumVreme = (datum) => {
+//   datum = +prompt("Unesite datum: ");
+//   datum = new Date();
+//   let date = datum.getDay();
+//   switch (date) {
+//     case 0:
+//       console.log("Danas je nedelja");
+//       break;
+//     case 1:
+//       console.log("Danas je ponedeljak.");
+//       break;
+//     case 2:
+//       console.log("Danas je utorak.");
+//       break;
+//     case 3:
+//       console.log("Danas je sreda.");
+//       break;
+//     case 4:
+//       console.log("Danas je cetvrtak.");
+//       break;
+//     case 5:
+//       console.log("Danas je petak.");
+//       break;
+//     default:
+//       console.log("Danas je subota.");
+//   }
+//   let sati = datum.getHours();
+//   for (i = 0; i <= 23; i++) {
+//     if (sati[i] <= 12) {
+//       return "AM";
+//     } else {
+//       return "PM";
+//     }
+//   }
+//   let total = date.concat("Trenutno vreme je: ");
+//   return total;
+// };
+// console.log(datumVreme());
+
+// 2. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+function januar(datum) {
+  for (i = 2014; i <= 2050; i++) {
+    datum = new Date(i, 1, 0);
+    if (datum.getDay() === 0)
+      console.log(
+        "Prvi Januar ce biti u opsegu od 2014-2050  " + i + " godine"
+      );
+  }
+  return datum;
+}
