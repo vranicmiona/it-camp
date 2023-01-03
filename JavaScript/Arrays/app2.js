@@ -70,9 +70,9 @@ console.log(daniStr);
 console.log(typeof daniStr); // String
 console.log(daniStr.split(","));
 // 2.
-const daniStr2 = daniStr2.join();
-console.log(daniStr2);
-console.log(typeof daniStr2);
+// const daniStr2 = daniStr.join();
+// console.log(daniStr2);
+// console.log(typeof daniStr2);
 // Dobijanje stringa i stavljanje nekog znaka izmedju elemenata niza koji smo pretvorili u string.
 const daniStr3 = dani.join("*");
 console.log(daniStr3);
@@ -91,8 +91,25 @@ const nizz = [
   true,
   "mandarina",
   [1, 2, 3],
-  49,
+
   694,
   "ananas",
   "tresnja",
 ];
+const count1 = nizz.filter(Boolean).length;
+const count2 = arr.filter(String).length;
+const count3 = arr.filter(Number).length;
+const count4 = arr.filter(Boolean).length;
+let zbir = count1 + count2 + count3 + count4;
+for (let i = 0; i <= nizz.length; i++) {
+  if (nizz[i] === typeof String) {
+    counter1++;
+  } else if (nizz[i] === typeof Number) {
+    counter2++;
+  } else if (nizz[i] === Array.isArray) {
+    counter3++;
+  }
+}
+console.log(
+  `Ovaj niz ima ${zbir} elemenata, od toga je Stringova ${counter1}, Number elmenata ${counter2} i Boolean ima ${counter3}.`
+);
