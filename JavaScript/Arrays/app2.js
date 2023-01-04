@@ -91,25 +91,31 @@ const nizz = [
   true,
   "mandarina",
   [1, 2, 3],
-
+  49,
   694,
   "ananas",
   "tresnja",
 ];
-const count1 = nizz.filter(Boolean).length;
-const count2 = arr.filter(String).length;
-const count3 = arr.filter(Number).length;
-const count4 = arr.filter(Boolean).length;
-let zbir = count1 + count2 + count3 + count4;
-for (let i = 0; i <= nizz.length; i++) {
-  if (nizz[i] === typeof String) {
-    counter1++;
-  } else if (nizz[i] === typeof Number) {
-    counter2++;
-  } else if (nizz[i] === Array.isArray) {
-    counter3++;
+
+function proveraTipa(nizz) {
+  let countS = 0;
+  let countB = 0;
+  let countN = 0;
+  let countA = 0;
+  for (i = 0; i < nizz.length; i++) {
+    if (typeof nizz[i] === "string") {
+      countS++;
+    } else if (typeof nizz[i] === "boolean") {
+      countB++;
+    } else if (typeof nizz[i] === "number") {
+      countN++;
+    } else if (typeof nizz[i] === "object") {
+      countA++;
+    }
   }
+  return `Ukupan broj stringova je ${countS}.
+          Ukupan broj Number je ${countN}.
+          Ukupan broj Boolean je ${countB}.
+          Ukupan broj Array je ${countA}.`;
 }
-console.log(
-  `Ovaj niz ima ${zbir} elemenata, od toga je Stringova ${counter1}, Number elmenata ${counter2} i Boolean ima ${counter3}.`
-);
+console.log(proveraTipa(nizz));
