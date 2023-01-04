@@ -102,3 +102,19 @@ console.log(
     "Kada se deli brojem molova ona je intezivna velicina."
   )
 );
+
+const n = +prompt("Unesite neki broj: ");
+let brojac = 0;
+let zbir = 0;
+for (let i = 0; i <= n; i++) {
+  if (i % 5 === 0) {
+    brojac++;
+    zbir += i;
+  }
+}
+console.log(
+  "Ukupno ima brojeva koji su deljivi sa 5 " +
+    brojac +
+    " i njihov zbir je " +
+    zbir
+);
