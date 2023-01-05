@@ -1,5 +1,11 @@
 // split() *podeliti* metoda nam vraca niz na osnovu nekog stinga na koji je primenljiv
-// Ako se kod split() metode izostavi argument, dobicemo niz od jendog elementa.
+// // Ako se kod split() metode izostavi argument, dobicemo niz od jendog elementa. Vraca niz, ako primenimo, const words = str.split(' ');
+// console.log(words[3]);
+// // expected output: "fox"
+
+// const chars = str.split('');
+// console.log(chars[8]);
+// // expected output: "k"
 
 const recenica =
   "Ovde je prilicno hladno, ali smo dobili obecanje da ce uskoro poceti grejanje.Ako se to ne desi, bice odlaganja casova.";
@@ -18,6 +24,8 @@ const recenica2 =
   "Decembar je poslednji mesec u godini. U decembar pocinje zima, decembar je najhladniji mesec u godini.";
 const niz4 = recenica2.split(/decembar/i);
 console.log(niz4);
+const niz10 = recenica2.split(/mesec/i);
+console.log(niz10);
 
 // Search metode:
 
@@ -31,7 +39,7 @@ console.log(pozicija2);
 // Ako trazimo poziciju nepostojeceg stinga unutar nase recenice, rezultat ce biti broj -1.
 const pozicija3 = recenica2.indexOf("Omar");
 console.log(pozicija3);
-// Drugi argument predtavlja poziciju od koje krecemo sa trazenjem datog stringa
+// Drugi argument predstavlja poziciju od koje krecemo sa trazenjem datog stringa
 const pozicija4 = recenica2.indexOf("mesec", 30);
 console.log(pozicija4);
 
@@ -55,10 +63,10 @@ function position(sentence) {
     return (
       "Prvo pojavljivanje reci 'ko osvaja' se nalazi na " +
       firstApp +
-      1 +
+      1 + //???
       " poziciji. \nPoslednje pojavljivanje reci 'ko osvaja' se nalazi na " +
       lastApp +
-      1 +
+      1 + //???
       " poziciji."
     );
   }
@@ -79,4 +87,4 @@ function zbirCifara(number) {
   }
   return zbir;
 }
-console.log(zbirCifara(367));
+console.log(zbirCifara(367)); //???????

@@ -17,8 +17,8 @@ if (isNaN(d) || isNaN(s) || isNaN(r)) {
 } else if (r <= 2 || r >= 10) {
   console.log("Uneta vrednost za rastojanje mora biti izmedju 2 i 10!");
 } else {
-  const obimOgrade = 2 * d + 2 * s;
-  const obimTerena = obimOgrade + 8 * r;
+  let obimOgrade = 2 * d + 2 * s;
+  let obimTerena = obimOgrade + 8 * r; //?????????????????????????????
 }
 console.log("Potrebno je, " + obimTerena + "m za ogradjivanje terena ogradom!");
 
@@ -111,7 +111,6 @@ for (let f; f >= 1; f--) {
   console.log(f ** 2);
   console.log((f -= 25));
 }
-
 // Prebrojati i sabrati brojeve deljive sa 5 u intervali od 1 do n
 const n = +prompt("Uneti neki broj");
 zbir = 0;

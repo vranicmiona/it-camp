@@ -3,8 +3,7 @@
 // prompt() metoda nam sluzi za komunikaciju sa korisnikom.
 
 const ime = prompt("Unesite vase ime: ");
-console.log(ime);
-
+console.log(ime); // Kod prompta kada se kaze da nije definisan to znaci da ne moze se u consoli izvrsiti program vec to mora u Google Chrom-u.
 // Sve sto korisnik unese je typa string
 const godine = prompt("Unesite svoju starost: ");
 console.log(typeof godine);
@@ -23,26 +22,3 @@ console.log(typeof brGodina2);
 
 const visina = +prompt("Unesite svoju visinu u cm: ");
 console.log(visina);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

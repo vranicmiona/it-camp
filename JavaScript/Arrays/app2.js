@@ -3,7 +3,6 @@
 
 const niz = ["Mitar", "Vranic", 20, true];
 console.log(niz);
-
 // Dozvoljeno je, cesto i prakticnije pisati svaki elemnt niza u novom redu. Ceesca je situacija sa objektima nego sa nizovima.
 // Mozemo prvo kreirati prazan niz nakon toga dodavati rucno elemente.
 
@@ -95,6 +94,7 @@ const nizz = [
   694,
   "ananas",
   "tresnja",
+  555,
 ];
 
 function proveraTipa(nizz) {
@@ -109,13 +109,49 @@ function proveraTipa(nizz) {
       countB++;
     } else if (typeof nizz[i] === "number") {
       countN++;
-    } else if (typeof nizz[i] === "object") {
+    } else if (Array.isArray(nizz[i])) {
       countA++;
     }
   }
-  return `Ukupan broj stringova je ${countS}.
+  return `Ukupan broj Stringova je ${countS}.
           Ukupan broj Number je ${countN}.
           Ukupan broj Boolean je ${countB}.
           Ukupan broj Array je ${countA}.`;
 }
 console.log(proveraTipa(nizz));
+
+const nizzz = [
+  56,
+  "danas",
+  "fakultet",
+  10,
+  true,
+  false,
+  [1, 10, 10],
+  "skola",
+  "znanje",
+  ["jagoda", 10, 10],
+];
+
+const tip = (nizzz) => {
+  brojac1 = 0;
+  brojac2 = 0;
+  brojac3 = 0;
+  brojac4 = 0;
+  for (let i = 0; i < nizzz.length; i++) {
+    if (typeof nizzz[i] === "string") {
+      brojac1++;
+    } else if (typeof nizzz[i] === "boolean") {
+      brojac2++;
+    } else if (typeof nizzz[i] === "number") {
+      brojac3++;
+    } else if (Array.isArray(nizzz[i])) {
+      brojac4++;
+    }
+  }
+  return `Stringova: ${brojac1}.
+  Boolean: ${brojac2}.
+  Number: ${brojac3}.
+  Array: ${brojac4}.`;
+};
+console.log(tip(nizzz));
