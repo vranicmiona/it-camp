@@ -1,5 +1,5 @@
 // unshift() method dodaje na pocetku niza jedan ili vis elemenata.
-// unshift() prikazuje novu duzinu niza. Duzinu nam vracaju one metode koje dodaju element.
+// unshift() prikazuje novu duzinu niza. Duzinu nam vracaju one metode koje dodaju element. Pristupanje bilo kojoj vrednosti elementa vrsi se preko indexa.
 
 const niz = ["cetvrtak", "petak", "subota"];
 niz.unshift("sreda"); // moze da se dodaje koliko hocemo elemenata i svis epomeraju za po jedan index
