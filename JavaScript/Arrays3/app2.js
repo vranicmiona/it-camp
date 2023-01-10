@@ -46,4 +46,37 @@ console.log(brojevi2);
 // Sortiranje niza od najmanjeg ka najvecem broju;
 // Napraviti funkciju koja vraca najveci element niza;
 // Napraviti funkciju koja vraca najmanji element niza (na dva nacina);
-// const niz = [-5, 6, 10, 45, 99, -44];
+const niz = [-5, 6, 10, 45, 99, -44];
+
+// 1.
+niz.sort((a, b) => a - b);
+console.log(niz);
+
+// 2.
+niz.sort((a, b) => b - a);
+console.log(niz);
+
+// 3.
+const najveci = (niz) => {
+  let veci = niz[0];
+  for (let i = 0; i < niz.length; i++) {
+    if (niz[i] > veci) {
+      veci = niz[i];
+    }
+  }
+  return veci;
+};
+
+console.log(najveci(niz));
+
+// 4.
+const najmanji = (niz) => {
+  let manji = niz[0];
+  for (let i = 0; i < niz.length; i++) {
+    if (niz[i] < manji) {
+      min = niz[i];
+    }
+  }
+  return manji;
+};
+console.log(najmanji(niz));
