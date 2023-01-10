@@ -17,10 +17,12 @@ if (isNaN(d) || isNaN(s) || isNaN(r)) {
 } else if (r <= 2 || r >= 10) {
   console.log("Uneta vrednost za rastojanje mora biti izmedju 2 i 10!");
 } else {
-  let obimOgrade = 2 * d + 2 * s;
-  let obimTerena = obimOgrade + 8 * r; //?????????????????????????????
+  const obimTerena = 2 * d + 2 * s;
+  const obimOgrade = obimTerena + 8 * r;
+  console.log(
+    "Potrebno je, " + obimOgrade + "m za ogradjivanje terena ogradom!"
+  );
 }
-console.log("Potrebno je, " + obimTerena + "m za ogradjivanje terena ogradom!");
 
 // Domaci zadaci:
 // 1. Korisnik unosi dva broja: na osnovu toga koji je broj manji, iteracija se izvrsava od njega do veceg broja. Izracunati aritmeticku sredinu brojeva koji su deljivi sa 5.
@@ -32,16 +34,16 @@ let sum = 0;
 if (isNaN(x) || isNaN(y)) {
   console.log("Moraju biti brojevi u pitanju: ");
 } else if (x < y) {
-  while (a <= b) {
+  while (x <= y) {
     if (x % 5 === 0) {
       counter++;
       sum += x;
     }
-    a++;
+    x++;
   }
   console.log(sum / counter);
 } else if (x > y) {
-  while (a >= b) {
+  while (x >= y) {
     if (y % 5 === 0) {
       counter++;
       sum += y;
@@ -49,7 +51,7 @@ if (isNaN(x) || isNaN(y)) {
     y++;
     console.log(sum / counter);
   }
-} else if (a === b) {
+} else if (x === y) {
   console.log("Brojevi moraju biti razliciti! ");
 }
 // 2. Nacin:

@@ -57,6 +57,13 @@ niz.sort((a, b) => b - a);
 console.log(niz);
 
 // 3.
+function minEl(niz) {
+  niz.sort((a, b) => b - a);
+  return niz[0];
+}
+console.log(minEl(niz));
+
+// II NACIN:
 const najveci = (niz) => {
   let veci = niz[0];
   for (let i = 0; i < niz.length; i++) {
@@ -69,7 +76,18 @@ const najveci = (niz) => {
 
 console.log(najveci(niz));
 
+// III NACIN:
+console.log(Math.max.apply(null, niz)); // apply koristimo da ga primenimo na objekat, apply primeni mi na objeakt, ali ti saljem dodatni niz koji treba da se ispita
+
 // 4.
+// I NACIN:
+function maxEl(niz) {
+  niz.sort((a, b) => a - b);
+  return niz[0];
+}
+console.log(maxEl(niz));
+
+// II NACIN:
 const najmanji = (niz) => {
   let manji = niz[0];
   for (let i = 0; i < niz.length; i++) {
