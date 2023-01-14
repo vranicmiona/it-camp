@@ -39,7 +39,7 @@ for (let pair of entries) {
   console.log(pair);
 }
 
-// zadatak
+// 3. zadatak
 function element(niz, n) {
   let nizz = [];
   if (n > niz.length) {
