@@ -9,7 +9,7 @@ function glavnaFunkcija(func) {
   console.log("Kraj glavne funkcije.");
 }
 function callback() {
-  console.log("Radnja unutar callback fnukcije.");
+  console.log("Radnja unutar callback funkcije.");
 }
 glavnaFunkcija(callback);
 
@@ -25,7 +25,7 @@ mainFunction(callBack2);
 
 // JavaScript Array Iteration //
 
-// Array Iteration metode proaze kroz svvaki element niza.
+// Array Iteration metode prolaze kroz svaki element niza.
 // forEach() metoda poziva callback funkciju za svaki element niza.
 
 const niz = ["tarik", "hamed", "emin", "bakir", "dzenan"];
@@ -80,7 +80,7 @@ console.log(niz4);
 
 const addSomething = (num) => {
   let newNum = "";
-  for (let i = 0; i < niz.length; i++) {
+  for (let i = 0; i < num.length; i++) {
     if (num[i] % 2 === 0 && num[i + 1] % 2 === 0) {
       newNum += num[i] + "-";
     } else {

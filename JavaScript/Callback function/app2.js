@@ -36,7 +36,7 @@ console.log(sqrt2);
 // 4.
 const brojevi = [-5, 4, 3, 10, 14, -5];
 const brojevi2 = brojevi.map(function (broj) {
-  const izracunaj = broj < 0 ? broj * -1 : broj ** 2;
-  return izracunaj;
+  const total = broj < 0 ? broj * -1 : broj ** 2;
+  return total;
 });
 console.log(brojevi2);
