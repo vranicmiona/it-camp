@@ -54,7 +54,7 @@ niz.forEach((student, pozicija) => {
   console.log(`${student} se nalazi na poziciji ${pozicija + 1}`);
 });
 
-// map() metoda kreira novi niz (iste duzine kao orignalni) sa logikom postavljnom unutar callback funkcije unuta date metode.
+// map() metoda kreira novi niz (iste duzine kao orignalni) sa logikom postavljnom unutar callback funkcije unuta date metode. Ona prima callback funkciju kao argument, a vraća novi niz mapiran na osnovu prosleđene funkcije.
 
 // Preko petlje napraviti novi niz koji ce imati sve elemente originalnog niza.
 
