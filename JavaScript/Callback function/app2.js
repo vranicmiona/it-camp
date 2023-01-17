@@ -94,3 +94,32 @@ console.log(number2);
 
 const DATA1 = [2, 26, 38, 75, 11, 29];
 const DATA2 = ["a", "b", "c", "d", "e"];
+
+// 1.
+const godine = (nizz) => {
+  let niz0 = [];
+  for (let element of nizz) {
+    if (element > 17) {
+      niz0.push(element);
+    }
+  }
+  return niz0;
+};
+console.log(godine([2, 17, 18, 6, 22, 90, 3]));
+
+// 2.
+// 1)
+const DATA3 = DATA1.concat(DATA2);
+console.log(DATA3);
+
+// 2)
+const DATA4 = DATA3.map((element) => {
+  if (element % 2 === 0) {
+    return element;
+  } else if (element === undefined) {
+    return DATA3.delite(element);
+  }
+});
+console.log(DATA4);
+
+// 3)
