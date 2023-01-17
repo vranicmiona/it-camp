@@ -108,18 +108,22 @@ const godine = (nizz) => {
 console.log(godine([2, 17, 18, 6, 22, 90, 3]));
 
 // 2.
-// 1)
-const DATA3 = DATA1.concat(DATA2);
-console.log(DATA3);
+const prvi = DATA1.concat(DATA2);
+const drugi = prvi.filter((element) => element % 2 === 0);
+drugi.unshift(10, 20);
+console.log(`Dva niza: ${prvi} i ${drugi}`);
 
-// 2)
-const DATA4 = DATA3.map((element) => {
-  if (element % 2 === 0) {
-    return element;
-  } else if (element === undefined) {
-    return DATA3.delite(element);
+function task(arr1, arr2) {
+  const pomocniNiz = arr1.concat(arr2);
+  const pomocniNiz2 = [];
+  for (let br of pomocniNiz) {
+    if (br % 2 === 0) {
+      pomocniNiz2.push(br);
+    }
   }
-});
-console.log(DATA4);
-
-// 3)
+  pomocniNiz2.unshift(10, 20);
+  return [pomocniNiz, pomocniNiz2];
+}
+console.log(
+  task((DATA1 = [2, 26, 38, 75, 11, 29]), (DATA2 = ["a", "b", "c", "d", "e"]))
+);
