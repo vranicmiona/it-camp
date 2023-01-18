@@ -1,5 +1,5 @@
-// filter() method kreira novi niz sa onim elementima koji se prosli test.
-// Novodibijeni niz mzoe imati maksimalno elemenata kao niz na koji se primenjuje metoda, takodje moze biti prazan niz.
+// filter() method kreira novi niz sa onim elementima koji su prosli test.
+// Novodobijeni niz moze imati maksimalno elemenata kao niz na koji se primenjuje metoda, takodje moze biti prazan niz.
 
 const godine = [19, 17, 20, 17, 16, 19, 10];
 const godine2 = godine.filter((element) => element > 17);
@@ -19,7 +19,11 @@ const newArr = ["Rec", "DVE RECI", 26, true, false, [1, 2, 3]];
 const newArr2 = newArr.filter((element) => typeof element === "boolean");
 console.log(newArr2);
 
-// Napraviti funkciju
+// Napraviti funkciju koja pravi niz koji ce iz postojeceg napraviti novi uz ispunjenje uslova:
+//    value > 2 => value * 7
+//    value >2 and value <8 => (value*4)/2
+//    Ostale vrednosti da ne uzima u obzir
+//    I na kraju treba novi niz vratiti sa godinama < 10.
 const brojevi = [2, 4, 89, 67, 5, 4, 6, 8, 77, -22, 1];
 
 function secondTask(arr) {
@@ -59,7 +63,9 @@ const prosecnaStarost = godine.reduce(
 const prosecnaStarost2 = prosecnaStarost / godine.length;
 console.log(prosecnaStarost2.toFixed(2));
 
-// Zadatak
+// Write a function that converts an array of values from miles to kilometres using the map method.
+// In the end, add the kilometres up in a new variable called "totalDistanceInKilometers" and
+// return this variable.
 
 const miles = [55, 78, 140, 121, 96, 100, 67];
 const totalKilometers = (arr) => {
@@ -69,7 +75,8 @@ const totalKilometers = (arr) => {
 };
 console.log(totalKilometers(miles));
 
-// Zadatak:
+// There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. Go to the editor
+// Sample array :
 
 function addition(arr, arr2) {
   const newArr = [];
@@ -86,3 +93,40 @@ function addition(arr, arr2) {
   return newArr;
 }
 console.log(addition([1, 0, 2, 3, 4], [8, 7, 4]));
+
+// 1. Iz niza od 10 elemenata izracunati sumu parnih brojeva niza.
+
+// 2. From the array of numbers, choose even double even numbers and compute the sum using Array's filter, map and reduce methods.
+
+// 3. Write a JavaScript program to find the most frequent item of an array.
+// Sample array :
+const arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+
+// 4. Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
+
+// 1.
+const nizz = [1, 2, 45, 78, 67, 0, 9, -1, -4, 7];
+const sumNum = nizz
+  .filter((element) => element % 2 === 0)
+  .reduce((previousValue, currentValue) => previousValue + currentValue);
+console.log(sumNum);
+
+// 2.
+const numbers = (arr) => {
+  const newArr = arr
+    .map((num) => num)
+    .filter((num) => num % 2 === 0)
+    .reduce((result, item) => result + item);
+  return newArr;
+};
+console.log(numbers([9, 8, 4, 0, -6, 2, 22, 32]));
+
+// 3.
+function frequentItem(array) {
+  let count = 0;
+  const array2 = array.filter((element, index) => {
+    if (element === index) {
+      count++;
+    }
+  });
+}
