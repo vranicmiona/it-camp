@@ -114,35 +114,61 @@ console.log(sumNum);
 // 2.
 const numbers = (arr) => {
   const newArr = arr
-    .map((num) => num)
     .filter((num) => num % 2 === 0)
+    .map((num) => num ** 2)
     .reduce((result, item) => result + item);
   return newArr;
 };
 console.log(numbers([9, 8, 4, 0, -6, 2, 22, 32]));
 
 // 3.
-function frequentItem(array) {
-  if (array.length == 0) return null;
-  var modeMap = {};
-  var maxEl = array[0],
-    maxCount = 1;
-  for (var i = 0; i < array.length; i++) {
-    var el = array[i];
-    if (modeMap[el] == null) modeMap[el] = 1;
-    else modeMap[el]++;
-    if (modeMap[el] > maxCount) {
-      maxEl = el;
-      maxCount = modeMap[el];
+let pojavljivanje = 1;
+let element;
+let brojac = 0;
+for (let i = 0; i < arr1.length; i++) {
+  for (let k = i; k < arr1.length; k++) {
+    if (arr1[i] === arr1[k]) {
+      brojac++;
+      if (brojac > pojavljivanje) {
+        element = arr1[i];
+        pojavljivanje = brojac;
+      }
     }
   }
-  return maxEl;
+  brojac = 0;
 }
-console.log(frequentItem([3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3]));
+console.log(`To je element ${element} i pojavljuje se ${pojavljivanje} puta.`);
 
-const s = {};
-arr1.map((element) => {
-  s[element] = s[element] + 1 || 1;
-});
-const najveci = Math.max(s);
-console.log();
+for (i = 1; i < 4; i++) {
+  for (j = i; j < 4; j++) {
+    console.log(i, j);
+  }
+}
+
+// 4. I - NACIN:
+function velikaSlova(recenica) {
+  let recenica2 = "";
+  for (let i = 0; i < recenica.length; i++) {
+    const velika =
+      recenica[i] === recenica[i].toUpperCase()
+        ? (recenica2 += recenica[i].toLowerCase())
+        : (recenica2 += recenica[i].toUpperCase());
+  }
+  return recenica2;
+}
+console.log(velikaSlova("The Quick Brown Fox"));
+
+// II - NACIN:
+
+const change = (str) => {
+  let newStr = "";
+  for (i = 0; i < str.lenght; i++) {
+    if (str[i] === str[i].toLowerCase()) {
+      newStr += str[i].toUpperCase();
+    } else {
+      newStr += str[i].toLOwerCase();
+    }
+  }
+  return newStr;
+};
+console.log(change("The Quick Brown Fox"));
