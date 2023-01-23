@@ -120,62 +120,6 @@ function proveraTipa(nizz) {
 }
 console.log(proveraTipa(nizz));
 
-function types(nizz) {
-  let stringTip = 0;
-  let numberTip = 0;
-  let booleanTip = 0;
-  let arrayTip = 0;
-  for (item of nizz) {
-    if (typeof item === "string") {
-      stringTip++;
-    } else if (typeof item === "number") {
-      numberTip++;
-    } else if (typeof item === "boolean") {
-      booleanTip++;
-    } else if (item instanceof Array) {
-      arrayTip++;
-    }
-  }
-  return `U datom nizu su se nasla: stringova \n${stringTip}, 
-  brojeva \n${numberTip}, boolean \n${booleanTip}, array \n${arrayTip}.`;
-}
-console.log(types(nizz));
-const nizzz = [
-  56,
-  "danas",
-  "fakultet",
-  10,
-  true,
-  false,
-  [1, 10, 10],
-  "skola",
-  "znanje",
-  ["jagoda", 10, 10],
-];
-
-const tip = (nizzz) => {
-  brojac1 = 0;
-  brojac2 = 0;
-  brojac3 = 0;
-  brojac4 = 0;
-  for (let i = 0; i < nizzz.length; i++) {
-    if (typeof nizzz[i] === "string") {
-      brojac1++;
-    } else if (typeof nizzz[i] === "boolean") {
-      brojac2++;
-    } else if (typeof nizzz[i] === "number") {
-      brojac3++;
-    } else if (Array.isArray(nizzz[i])) {
-      brojac4++;
-    }
-  }
-  return `Stringova: ${brojac1}.
-  Boolean: ${brojac2}.
-  Number: ${brojac3}.
-  Array: ${brojac4}.`;
-};
-console.log(tip(nizzz));
-
 // Novi zapis for petlje, koji se odnosi na sve iterirajuce objekte.
 // for (let i of nizz){
 //   console.log(i);

@@ -42,6 +42,7 @@ const podeliNiz = (niz) => {
   devojke su ${devojke}.`;
 };
 console.log(podeliNiz(grupa));
+
 // Napraviti funkciju koja pravi nov niz, koji ce sadrzati samo elemente koji su se nalazili na neparnim pozicijama unutar originalnog niza.
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 // [1, 3, 5, 7, 9, 11, 13]
@@ -70,6 +71,7 @@ const parnePozicije = (niz) => {
   return parni;
 };
 console.log(parnePozicije([1, 2, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 14]));
+
 // 2. Iz nekog niza izdvojiti sve parne brojeve.(Napraviti novi niz)
 const parniBr = (niz) => {
   const parni = [];
@@ -81,6 +83,7 @@ const parniBr = (niz) => {
   return parni;
 };
 console.log(parniBr([2, 4, 1, 6, 34, 80, 77, 3, 88]));
+
 // 3. Iz nekog niza izdvojiti sve neparne brojeve.(Napraviti novi niz)
 const neparniBr = (niz) => {
   const neparni = [];
@@ -92,6 +95,7 @@ const neparniBr = (niz) => {
   return neparni;
 };
 console.log(neparniBr([0, 1, 7, 8, 4, 22, 90, 505, 25, 3]));
+
 // 4. Iz nekog niza izdvojiti sve pozitivne brojeve.(Napraviti novi niz)
 function pozitivniBr(niz) {
   let pozitivni = [];
