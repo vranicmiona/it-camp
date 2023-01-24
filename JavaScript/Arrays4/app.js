@@ -69,3 +69,17 @@ const getElements = (niz, n = undefined) => {
 console.log(getElements(niz, 4));
 console.log(getElements(niz));
 console.log(getElements(niz, 10));
+
+const niz2222 = ["Miona", "Mitar", "Marija", "programiranje", 7, true];
+const uzmiElement = (niz2222, n = undefined) => {
+  if (n > niz2222.length) {
+    return niz2222;
+  } else if (n === undefined) {
+    return niz2222[0];
+  } else {
+    return niz2222.slice(0, n);
+  }
+};
+console.log(uzmiElement(niz2222, 6)); // ceo niz vraca
+console.log(uzmiElement(niz2222, 3 + 1)); // Miona, Mitar, "Marija", "programiranje"
+console.log(uzmiElement(niz2222, 1)); // Miona
