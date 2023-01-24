@@ -18,12 +18,13 @@ console.log(lastBakir);
 // Array.from() vraca niz, koji se pravi od nekoga objekta koji ima length.
 const noviNiz = Array.from("SVAKO SLOVO CE BITI POSEBAN ELEMENT NIZA");
 console.log(noviNiz);
+const miona = ["volim te", "puno"];
 
 // includes() metoda vraca Boolean u zavisnosti od toga da li se element nalazi u nizu
 console.log(niz.includes("Emin")); // false
 
 // keys() metoda vraca Array Iterator Object sa kljucevima (indexima) nekog niza. Mnogo ima vise smisla kod objekata.
-const indexi = niz.keys();
+const indexi = niz.keys(); // 0 1 2 3 4
 console.log(indexi);
 
 for (let index of indexi) {
@@ -37,6 +38,11 @@ console.log(entries);
 
 for (let pair of entries) {
   console.log(pair);
+  // [ 0, 'Hatidza' ]
+  // [ 1, 'Bakir' ]
+  // [ 2, 'Amer' ]
+  // [ 3, 'Bakir' ]
+  // [ 4, 'Alen' ]
 }
 
 // 3. zadatak
@@ -47,7 +53,6 @@ function element(niz, n) {
   } else {
     return (nizz = niz.slice(0, n));
   }
-  return nizz;
 }
 console.log(element([2, 3, 4, 8], 2));
 
