@@ -13,7 +13,8 @@ const parni = niz
 console.log(niz);
 console.log(parni);
 
-// 2. Palindrom
+// 2. Broj palindrom se cita isto sa obe strane. Najveci palindrom napravljen od proizvoda dva dvocifrena broja je 9009 = 91 x 99.
+//  Pronaci najveci palindrom napravljen od proizvoda dva trocifrena broja.
 // I - NACIN:
 function isPalindrom(broj) {
   const strBroj = broj.toString();
@@ -40,13 +41,13 @@ const maxPalindrom = () => {
 };
 console.log(maxPalindrom());
 // II - NACIN:
-const maxPalindrom2 = () => {
-  for (i = 999; i > 99; i--) {
-    for (k = 999; k > 99; k--) {
-      if (isPalindrom(i * k)) {
-        return i * k;
-      }
-    }
-  }
-};
-console.log(maxPalindrom2());
+// const maxPalindrom2 = () => {
+//   for (i = 999; i > 99; i--) {
+//     for (k = 999; k > 99; k--) {
+//       if (isPalindrom(i * k)) {
+//         return i * k;
+//       }
+//     }
+//   }
+// };
+// console.log(maxPalindrom2());
