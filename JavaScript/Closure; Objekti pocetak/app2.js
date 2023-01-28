@@ -16,7 +16,7 @@ const person = {
 console.log(person);
 
 // Pristupanje odredjenim vrednostima objekta mozemo izvrsiti na dva nacina:
-// Jedan key:value par se proprti (svojstvo).
+// Jedan key:value par se propety (svojstvo).
 
 // 1. ObjectName.propertyName (person.firstName);
 
