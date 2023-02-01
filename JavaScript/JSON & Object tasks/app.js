@@ -3,7 +3,7 @@
 // JSON je format za skladistenje i prenos podataka.
 // Najcesce se koristi kada se podaci salju sa servera ka WEB stranici.
 
-// JSON posaci su vrslo slicni JavaScript objectu i oni se zapisiuju:
+// JSON podaci su vrlo slicni JavaScript objectu i oni se zapisiuju:
 
 // const person = {
 // "firstname": "Amer",
