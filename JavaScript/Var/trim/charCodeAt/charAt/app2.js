@@ -1,4 +1,4 @@
-// trim() m;etoda brise rzmake sa obe strane stringa.
+// trim() metoda brise rzmake sa obe strane stringa.
 const recenica = "    Da li vam je hladno?    ";
 console.log(recenica);
 const recenica2 = recenica.trim();
