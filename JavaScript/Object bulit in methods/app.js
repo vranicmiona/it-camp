@@ -71,7 +71,7 @@ console.log(firstName); // Hasan
 console.log(age); // 18
 
 // Zadaci vezbanje:
-// 1. Idvoji sve elemente punoletne starosti.
+// 1. Izdvoji sve elemente punoletne starosti.
 const godinee = [
   { starost: 19 },
   { starost: 19 },
@@ -145,42 +145,3 @@ const sort2 = (arr) => {
   return newArr;
 };
 console.log(sort2(library));
-
-function sort3() {
-  max = library[0].title.length;
-  for (i = 1; i < library.length; i++) {
-    if (library[i].title.length > max) {
-      max = library[i].title.length; // samo da bi uzeli najduzi deo objekta
-    }
-  }
-  for (i = 0; i < library.length - 1; i++) {
-    // pristupamo indexu
-    for (j = i; j < library.length; j++) {
-      // pristupamo elemntu(1, 2, 3)
-      for (k = 0; k < library.length; k++) {
-        // pristupamo elementima(x) unutar elemnta(1, 2, 3)
-        if (library[i].title[k] > library[j].title[k + 1]) {
-          // ???
-          pom = library[i];
-          library[i] = library[j];
-          library[j] = pom;
-        }
-      }
-    }
-  }
-  return library;
-}
-console.log(library);
-
-const sort4 = (arr) => {
-  const newArr = arr.map((el) => el.title);
-  newArr.sort();
-  const finalArr = [];
-  for (i = 0; i < arr.length; i++) {
-    if (arr.find((element) => element.title === newArr[i])) {
-      finalArr.push(arr.find((element) => element.title === newArr[i]));
-    }
-  }
-  return finalArr;
-};
-console.log(library);
