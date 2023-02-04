@@ -18,6 +18,7 @@ const automobil = {
   },
 };
 
+// I NACIN:
 function povecanaCenaKarte(a) {
   automobil.garaza.satnaKarta += automobil.garaza.satnaKarta * a;
   automobil.garaza.dnevnaKarta += automobil.garaza.dnevnaKarta * a;
@@ -29,4 +30,20 @@ function povecanaCenaKarte(a) {
   };
 }
 console.log(povecanaCenaKarte.call(automobil.garaza, 0.2));
+console.log(automobil);
+
+// II NACIN:
+function povecajZa20() {
+  // povecava neka svojstva iz objekta na koji ce biti primenjen
+  this.satnaKarta *= 1.2;
+  this.dnevnaKarta *= 1.2;
+  this.mesecnaKarta *= 1.2;
+
+  return {
+    satnaKarta: this.satnaKarta,
+    dnevnaKarta: this.dnevnaKarta,
+    mesecnaKarta: this.mesecnaKarta,
+  };
+}
+povecajZa20.call(automobil.garaza);
 console.log(automobil);
