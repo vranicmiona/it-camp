@@ -15,5 +15,3 @@ const newArr = movies.map((element) => {
   };
 });
 console.log(newArr);
-
-// Zadatak2:

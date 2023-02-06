@@ -18,7 +18,7 @@ console.log(lastBakir);
 // Array.from() vraca niz, koji se pravi od nekoga objekta koji ima length.
 const noviNiz = Array.from("SVAKO SLOVO CE BITI POSEBAN ELEMENT NIZA");
 console.log(noviNiz);
-const miona = ["volim te", "puno"];
+const miona = ["lalala ", "cao"];
 
 // includes() metoda vraca Boolean u zavisnosti od toga da li se element nalazi u nizu
 console.log(niz.includes("Emin")); // false
