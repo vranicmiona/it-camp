@@ -11,7 +11,7 @@ function glavnaFunkcija(func) {
 function callback() {
   console.log("Radnja unutar callback funkcije.");
 }
-glavnaFunkcija(callback);
+glavnaFunkcija(callback); // callback - argument neke druge funkcije, referenca na datu radnju
 
 // Napraviti glavnu funkciju unutar koje ce se desiti ispis sta ona predstavlja, a celu stvar ce da izvrsi callback funkcija. Callback funkcija ima 2 parametra, i ispisuje rezultat par1 stepenovan par2.
 function mainFunction(callBack2) {
@@ -22,7 +22,6 @@ const callBack2 = (par1, par2) => {
   console.log(par1 ** par2);
 };
 mainFunction(callBack2);
-
 // JavaScript Array Iteration //
 
 // Array Iteration metode prolaze kroz svaki element niza.
@@ -63,7 +62,6 @@ for (let student of niz) {
   niz2.push(student);
 }
 console.log(niz2);
-
 // const niz3 = niz.map(function (student) {
 //   return student;
 // });
@@ -90,3 +88,16 @@ const addSomething = (num) => {
   return newNum;
 };
 console.log(addSomething("025468"));
+
+function dodatiExpression(broj) {
+  let noviBroj = "";
+  for (let i = 0; i < broj.length; i++) {
+    if (broj[i] % 2 === 0 && broj[i + 1] % 2 === 0) {
+      noviBroj += broj[i] + "-";
+    } else {
+      noviBroj += broj[i];
+    }
+  }
+  return noviBroj;
+}
+console.log(dodatiExpression("237895444099066"));

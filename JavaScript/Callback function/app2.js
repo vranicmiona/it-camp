@@ -124,6 +124,4 @@ function task(arr1, arr2) {
   pomocniNiz2.unshift(10, 20);
   return [pomocniNiz, pomocniNiz2];
 }
-console.log(
-  task((DATA1 = [2, 26, 38, 75, 11, 29]), (DATA2 = ["a", "b", "c", "d", "e"]))
-);
+console.log(task([2, 26, 38, 75, 11, 29], ["a", "b", "c", "d", "e"]));

@@ -4,17 +4,17 @@ const main = (other) => {
   console.log("Radnja glavne funkcije: . . .");
   other(1, 2, 3);
 };
-
+// argumenti callback funkcije
 const ars = (first, second, third) => {
   console.log(+((first + second + third) / 3).toFixed(2));
 };
-main(ars);
+main(ars); // pozivanje callback funkcije
 
 // CLOUSURE FUNKCIJE //
 // Poznata je cinjenica da kada se izvrsi funkcija, sve njene lokalne promenljive pokupi garbage colector i one prestaju da postoje u memoriji. Medjutim to nije slucaj za funkcije cije promenljive zahteva neka druga funkcija.
 
 // Clousure je funkcija koja ima pravo pristupa promenljivima iz domena funkcije.
-// To se najcesce postize ugradjivanjem funkcije unutar drugde funkcije, nakon cega se postize takozvani Blok Chain.
+// To se najcesce postize ugradjivanjem funkcije unutar druge funkcije, nakon cega se postize takozvani Blok Chain.
 
 function first() {
   const prom1 = "Hi";
