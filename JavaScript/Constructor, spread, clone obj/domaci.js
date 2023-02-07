@@ -89,8 +89,8 @@ const grupa = [
 
 function filtrirajNiz(arr) {
   const newArr = arr.filter(
-    (element) => element.bojaOciju === "braon" && element.polozenC === false
-  );
+    (element) => element.bojaOciju === "braon" && element.polozenC === false // callback funkcija (element)
+  ); // !element.polozenC
   return newArr;
 }
 console.log(filtrirajNiz(grupa));
@@ -231,7 +231,7 @@ function watchList1(niz) {
     .map((element) => {
       return +element.imdbRating;
     });
-  const noviNiz2 = noviNiz.reduce((previous, current) => previous + current);
+  const noviNiz2 = noviNiz.reduce((previous, current) => previous + current); // previous + Number(current.imdbRating),0 => nula kao pocetna vrednost, privious je uvek prethodna, ali bitno je sta dodajemo!!!
   const finalNiz = noviNiz2 / noviNiz.length;
   return finalNiz;
 }
