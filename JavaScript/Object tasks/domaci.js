@@ -24,11 +24,11 @@ console.log(largestElement([43, 56, 23, 89, 88, 90, 99, 652], 7));
 // [58, "abcd", true]
 function filterEl(arr) {
   const newArr = arr.filter((element) => {
-    if (typeof element !== false) {
+    if (element !== false) {
       return element;
-    } else if (typeof element !== 0) {
+    } else if (element !== 0) {
       return element;
-    } else if (typeof element !== null) {
+    } else if (element !== null) {
       return element;
     }
   });
