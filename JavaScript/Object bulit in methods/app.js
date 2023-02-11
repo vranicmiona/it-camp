@@ -30,6 +30,14 @@ console.log(entries);
 const newArr = entries.flat().filter((element) => typeof element === "string"); // filter metoda uzima callback funkciju
 console.log(newArr);
 
+// Object.fromEntires() metoda kconst object1 = { a: 1, b: 2, c: 3 };
+
+const object2 = Object.fromEntries(
+  Object.entries(object1).map(([key, val]) => [key, val * 2])
+);
+console.log(object2);
+// { a: 2, b: 4, c: 6 oja vraca keys-values parove  iz niza u objekte
+
 // Object.is(obj1, obj2) vrsi poredjenje dva objekta
 const obj1 = {
   firstName: "Mitar",
