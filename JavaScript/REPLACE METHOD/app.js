@@ -1,6 +1,6 @@
 // Replace metoda vrsi zamenu nekoliko karaktera datog stringa. Ima 2 argumenta.
 // Po defaultu replace() metoda menja samo prvo pronalazenje datog stringa
-const recenica50 = "Danas smo podelili sertifikate za HTML CSS i JavaScript."
+const recenica50 = "Danas smo podelili sertifikate za HTML CSS i JavaScript.";
 let recenica2 = recenica50.replace("Danas", "Juce");
 console.log(recenica2);
 recenica2 = recenica50.replace("s", "t");
@@ -8,6 +8,7 @@ console.log(recenica2);
 // Za promenu svih pronalazenja datog stringa cemo koristiti Regular Expressions:
 // 1. g (global)
 recenica2 = recenica50.replace(/s/g, "t");
+console.log(recenica2); // menja sva mala "t" slova
 // 2. i (insensitive)
 recenica2 = recenica50.replace(/s/gi, "A");
 console.log(recenica2);
@@ -27,13 +28,13 @@ console.log(c);
 
 c = a.concat(b, "e", ".");
 console.log(c);
-c = a.concat(" ", b,"\nNakon toga cemo raditi React biblioteku");
+c = a.concat(" ", b, "\nNakon toga cemo raditi React biblioteku");
 console.log(c);
 
 // Napomena.
 // Sve string metode prave novu promenljivu (jer su stringovi immutable vrednosti).
 
-// Domaci zadatak: 
+// Domaci zadatak:
 
 // Napraviti funkciju koja kod stringa koji predstavlja argument funkcije ispituje sledece:
 // Ako dati string ima vecu duzinu od 9:
@@ -43,49 +44,62 @@ console.log(c);
 // argument + {njena duzina} + "nedovoljno za dalje ispitivajne".
 
 const domaci = () => {
-  const recenica = prompt("Unesite neku recenicu: ")
+  const recenica = prompt("Unesite neku recenicu: ");
   const prva = recenica.toUpperCase();
   const druga = recenica.toLowerCase();
   let polaDuzina;
-// if(recenica.length % 2 === 0){
-//   polaDuzine = recenica.length / 2;
-// }else{
-//   polaDuzina = Math.round(recenica.length / 2 === 0); // i u prvoj i drugoj metodi ce da nam bude ceo broj sto ce nam trebati za drugi deo zadatka
+  // if(recenica.length % 2 === 0){
+  //   polaDuzine = recenica.length / 2;
+  // }else{
+  //   polaDuzina = Math.round(recenica.length / 2 === 0); // i u prvoj i drugoj metodi ce da nam bude ceo broj sto ce nam trebati za drugi deo zadatka
 
-polaDuzina = recenica.length % 2 === 0 ? recenica.length / 2 : Math.round(recenica.length / 2);
-const prvaPol = recenica.slice(0, polaDuzina).toUpperCase()// ne uzima polaDuzine kao vrednost samo prvu
-const drugaPol = recenica.substring(polaDuzina, recenica.length).toLowerCase() // ne mora da ide do kraja, ne mora recenica.length
-// const treca = prvaPol + drugaPol;
-const treca = prvaPol.concat(drugaPol);
-const cetvrta = recenica.replace(/skola/gi, "fakultet");
-const peta = recenica.substr(0, 10);
-const sesta = recenica.slice(-10);
-return (
-  prva.concat("\n", druga, "\n", treca, "\n", cetvrta, "\n", peta, "\n", sesta)
-);}
-   console.log(domaci());
+  polaDuzina =
+    recenica.length % 2 === 0
+      ? recenica.length / 2
+      : Math.round(recenica.length / 2);
+  const prvaPol = recenica.slice(0, polaDuzina).toUpperCase(); // ne uzima polaDuzine kao vrednost samo prvu
+  const drugaPol = recenica
+    .substring(polaDuzina, recenica.length)
+    .toLowerCase(); // ne mora da ide do kraja, ne mora recenica.length
+  // const treca = prvaPol + drugaPol;
+  const treca = prvaPol.concat(drugaPol);
+  const cetvrta = recenica.replace(/skola/gi, "fakultet");
+  const peta = recenica.substr(0, 10);
+  const sesta = recenica.slice(-10);
+  return prva.concat(
+    "\n",
+    druga,
+    "\n",
+    treca,
+    "\n",
+    cetvrta,
+    "\n",
+    peta,
+    "\n",
+    sesta
+  );
+};
+console.log(domaci());
 
-  // Izostavljajuci drugi argument kod slice() metode uzima isecak do kraja stringa.
-  const isecak = "Recenica za primer slice metode jednim argumentom".slice(12);
-  console.log(isecak);
+// Izostavljajuci drugi argument kod slice() metode uzima isecak do kraja stringa.
+const isecak = "Recenica za primer slice metode jednim argumentom".slice(12);
+console.log(isecak);
 
-  // Domaci zadatak:
-  // Napisi program koji ucitava cetvorocifreni broj i ispisuje zbir svih cifara tog broja:
-  const sumaCifara = (broj) => {
-    if(isNaN(broj) || (broj < 1000 || broj > 9999)){
-      return "Argument nije korektan"
-    } else {
-      const cifraJedinice = broj % 10;
-      const cifraDesetica = Math.trunc((broj % 100) / 10);
-      const cifraStotina = Math.trunc((broj % 1000)/100);
-      const cifraHiljada = Math.trunc((broj / 1000));
-      return cifraJedinice + "\n"
-       + cifraStotina + "\n"
-       + cifraHiljada + "\n"
-    }
-  };
-  console.log(sumaCifara("afiufhasonci"));
-  console.log(sumaCifara(100));
-  console.log(sumaCifara(3459));
+// Domaci zadatak:
+// Napisi program koji ucitava cetvorocifreni broj i ispisuje zbir svih cifara tog broja:
+const sumaCifara = (broj) => {
+  if (isNaN(broj) || broj < 1000 || broj > 9999) {
+    return "Argument nije korektan";
+  } else {
+    const cifraJedinice = broj % 10;
+    const cifraDesetica = Math.trunc((broj % 100) / 10);
+    const cifraStotina = Math.trunc((broj % 1000) / 100);
+    const cifraHiljada = Math.trunc(broj / 1000);
+    return cifraJedinice + "\n" + cifraStotina + "\n" + cifraHiljada + "\n";
+  }
+};
+console.log(sumaCifara("afiufhasonci"));
+console.log(sumaCifara(100));
+console.log(sumaCifara(3459));
 
-1234
+1234;
