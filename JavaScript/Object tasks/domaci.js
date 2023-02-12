@@ -67,7 +67,9 @@ function lengthObject(obj) {
 }
 console.log(lengthObject(student));
 
-// 4. Zadatak
+// 4. Za unete nizove A od N i B od M celih brojeva, treba ispisati M elemenata niza A onim redosledom kako je navedeno u nizu B (pomocniB).
+// Pre svega filtrirati niz B (treba izbaciti sve vrednosti koje su vece ili jednake duzini niza A). Nakon toga Odraditi zadatak za pomocniB i A.
+// Npr. A=[23,52,38,44] i B=[3,1,1,2], ispisuje se 38, 23, 23, 52.
 function noviNiz(arr1, arr2) {
   const newArr3 = [];
   const newArr2 = arr2.filter((element) => element <= arr1.length - 1);
@@ -79,7 +81,7 @@ function noviNiz(arr1, arr2) {
 }
 console.log(noviNiz([23, 52, 38, 44], [3, 1, 1, 2]));
 
-// 5. Zadatak
+// 5. Za uneti niz od N numeričkih vrednosti, prebrojati koliko ima elemenata koji su duplo veći od prethodnog i za 10 manji od sledećeg elementa u nizu.
 function niz(arr) {
   counter = 0;
   for (i = 0; i < arr.length; i++) {

@@ -49,7 +49,7 @@ let novaRecenica = ""; // da bi
 // Ispisati novu recernicu gde ce svaka rec da zavrsi velikim slovom
 
 const first =
-  "sledece subote cemo imati test koji predstavlja kraj prvog ciklusa. nakon toga cemo videti ko sve nastavlja sa drugim ciklusom it campa";
+  "sledece subote cemo imati ,test koji predstavlja kraj prvog ciklusa. nakon toga cemo videti ko sve nastavlja sa drugim ciklusom it campa";
 
 let second = "";
 for (a = 0; a < first.length; a++) {
@@ -62,3 +62,33 @@ for (a = 0; a < first.length; a++) {
   }
 }
 console.log(second);
+
+const rec =
+  "danas sam ucila i vezbala; za test. vezbala sam, stringove, replace method, rad i zadaci sa stringovima. I sada i dalje vezbam.";
+let novaRec = "";
+for (i = 0; i < rec.length; i++) {
+  if (
+    i === rec.length - 1 ||
+    rec[i + 1] === "." ||
+    rec[i + 1] === "," ||
+    rec[i + 1] === ";"
+  ) {
+    novaRec += rec[i].toUpperCase();
+  } else if (rec[i + 1] === " ") {
+    novaRec += rec[i].toUpperCase();
+  } else {
+    novaRec += rec[i];
+  }
+}
+console.log(novaRec);
+let novaRec2 = "";
+for (i = 0; i < rec.length; i++) {
+  if (i === 0) {
+    novaRec2 += rec[i].toUpperCase();
+  } else if (rec[i - 1] === " ") {
+    novaRec2 += rec[i].toUpperCase();
+  } else {
+    novaRec2 += rec[i];
+  }
+}
+console.log(novaRec2);

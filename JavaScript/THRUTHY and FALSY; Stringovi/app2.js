@@ -36,7 +36,7 @@ const strng6 =
 // 3. substr(prvi argument predstavlja start, length duzina do koliko ce da traje to parce stringa)
 // console.log(string7.slice(0, 5));
 // Racunanje ide od 0.
-const string7 = "Danas jebilo lepo vreme.";
-console.log(string7.slice(-6, -1));
+const string7 = "Danas je bilo lepo vreme.";
+console.log(string7.slice(-10, -1));
 console.log(string7.substring(0, 5));
 console.log(string7.substr(0, 10)); // kreni od 0, a njena duzina ce da bude 8
