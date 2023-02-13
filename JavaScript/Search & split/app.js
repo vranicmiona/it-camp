@@ -82,9 +82,20 @@ console.log(position(" svetsko prvenstvo ove godine. Stvarno"));
 function zbirCifara(number) {
   let zbir = 0;
   while (number > 0) {
-    zbir = number % 10;
+    zbir += number % 10; // ovde je upisano 7 kao zaseban broj
     number = Math.floor(number / 10);
   }
   return zbir;
 }
-console.log(zbirCifara(367)); //???????
+console.log(zbirCifara(36747)); // 27 ovo radi za bilo koji primer ne samo trocifrene brojeve
+
+// Ovaj zadatak treba znati definitivno
+function cetvorocifreniBr(broj) {
+  let zbir = 0;
+  while (broj > 0) {
+    zbir += broj % 100;
+    broj = Math.floor(broj / 100);
+  }
+  return zbir;
+}
+console.log(cetvorocifreniBr(4113)); // 54
