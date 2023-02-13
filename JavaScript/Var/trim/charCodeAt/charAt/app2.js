@@ -1,4 +1,4 @@
-// trim() metoda brise rzmake sa obe strane stringa.
+// trim() metoda brise razmake sa obe strane stringa.
 const recenica = "    Da li vam je hladno?    ";
 console.log(recenica);
 const recenica2 = recenica.trim();
@@ -10,7 +10,7 @@ console.log(recenica2.length);
 // 2. charCodeAt(index) - vraca nam kod karaktera nekog stringa za poslatim indexom.
 // 3. string[index] - vrlo slicno charAt metodi (sa jednom razlikom)
 
-const novaRecenica = "Spava mi se."
+const novaRecenica = "Spava mi se.";
 const char1 = novaRecenica.charAt(3);
 console.log(char1);
 const char2 = novaRecenica.charCodeAt(3); // retko ce se primenjivati

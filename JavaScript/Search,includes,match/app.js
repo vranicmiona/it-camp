@@ -1,4 +1,4 @@
-// search() meotda nam daje poziciju (index) nekoga stringa argumenta metode
+// search() meotoda nam daje poziciju (index) nekoga stringa argumenta metode
 
 const recenica = "Desila se neocekivana poseta";
 const position = recenica.search("poseta");

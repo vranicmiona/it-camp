@@ -38,7 +38,7 @@ console.log(kojihVise("koliko KOJIH"));
 console.log(kojihVise("koliko KOJIH IMA VISE"));
 console.log(kojihVise("koliko jos tri KOJIH IMA VISE"));
 
-// 3. Sva velika slova u stringu treba sbesti na mala slova. Npr. za uneto 'WEBnSTUDY.com', dobija se novi string ''
+// 3. Sva velika slova u stringu treba svesti na mala slova. Npr. za uneto 'WEBnSTUDY.com', dobija se novi string ''
 
 const toLower = (recenica) => {
   let novaRecenica = "";
@@ -61,9 +61,6 @@ const lastSpace = (string) => {
   }
   return `Poslednji razmak se nalazi na ${index} mestu.`;
 };
-
-console.log(lastSpace("Sta ako ima vise razmaka"));
-console.log(lastSpace("string"));
 
 // Zadatak 5. Ispisati dužinu prve reči unetog stringa. Npr. za uneto 'Pera ima devojku', rezultat je 4. Podrazumeva se da uneti string nema vodeće razmake.
 // I NACIN:
@@ -141,6 +138,20 @@ function isPalindrom(rec) {
 }
 console.log(isPalindrom("anavolimilovana"));
 
+function palindrom(rec) {
+  let novaRec = "";
+  for (let i = rec.length - 1; i >= 0; i--) {
+    // krece od obrnutog stringa
+    novaRec += rec[i];
+  }
+  if (novaRec === rec) {
+    return `PALINDROM`;
+  } else {
+    return `nije`;
+  }
+}
+console.log(palindrom("sia"));
+
 // Zadatak 8. Za uneti string A treba kreirati novi string B koji se sastoji od prve i poslednje reči (odvojenih razmakom) unetog stringa. Npr. za A='Svuda pođi, kući dođi', dobija se B='Svuda dođi'. Podrazumeva se da uneti string nema vodeće ili prateće razmake
 const prvaIPoslednja = function (recenica) {
   const pozicijaPrvogRazmaka = recenica.indexOf(" "); // izdvojio nam se prvi razmak
@@ -172,7 +183,7 @@ function nasaFunkcija(rec, znak) {
   return noviString;
 }
 console.log(nasaFunkcija("Recenica sa slovom a.", "a"));
-
+///////////////////////////////////////////////////////////
 // Domaci zadatak:
 // Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
 const task = (recenica10, n) => {
