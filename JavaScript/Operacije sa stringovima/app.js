@@ -4,7 +4,7 @@ console.log(recenica);
 let omar = "Omar";
 
 // Pristupanje nekom karakteru stringa se vrsi preko indexa.
-// Indexiranje ide od !!!
+// Indexiranje ide od nule!!!
 // U SVAKOM INDEXIRAJUCEM OBJEKTU, POSLEDNJI KARAKTER IMA INDEX.
 // (ukupna duzina stringa) -1 !!!
 

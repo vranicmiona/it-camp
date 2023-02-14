@@ -15,38 +15,40 @@ console.log(najveci(-22, -25, -55));
 
 // 2. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
 
-const value = (int1, int2) => {
-  let i;
-  counter1 = 0;
-  counter2 = 0;
+function nearestHundred(int1, int2) {
+  let counter1 = 0;
+  let counter2 = 0;
   if (int1 >= 100) {
-    for (i = int1; i >= 100; i--) {
-      return counter1++;
+    for (let i = int1; i >= 100; i--) {
+      counter1++;
     }
-  } else
-    for (i = int1; i <= 100; i++) {
-      return counter1++;
-    }
-  if (int2 >= 100) {
-    for (i = int2; i >= 100; i--) {
-      return counter2++;
-    }
-  } else
-    for (i = int2; i <= 100; i++) {
-      return counter2++;
-    }
-  if (counter1 > counter2) {
-    return `Drugi je blizi broju 100!`;
-  } else if (counter2 > counter1) {
-    return `Prvi broj je blizi sto!`;
   } else {
-    return `Brojevi su jednaki!`;
+    for (let i = int1; i <= 100; i++) {
+      counter1++;
+    }
   }
-};
-console.log(value(12, 100));
-console.log(value(102, 55));
-console.log(value(12, 12));
-console.log(value(-34, -56));
+  if (int2 >= 100) {
+    for (let i = int2; i >= 100; i--) {
+      counter2++;
+    }
+  } else {
+    for (let i = int2; i <= 100; i++) {
+      counter2++;
+    }
+  }
+  if (counter1 > counter2) {
+    return `Drugi je blizi broju 100. Drugi broj je udaljen od 100 za ${counter2}!`;
+  } else if (counter1 === counter2) {
+    return `Brojevi su jednaki`;
+  } else if (counter1 === 0 || counter2 === 0) {
+    return `Broj je jednak 100.`;
+  } else {
+    return `Prvi je blizi broju 100. Prvi broj je udaljen od 100 za ${counter1}!`;
+  }
+}
+console.log(nearestHundred(12, 12)); // jednaki
+console.log(nearestHundred(-1, 400)); // prvi je blizi, daljen za 102
+console.log(nearestHundred(105, 100)); //
 
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 function firstTask(num1, num2) {

@@ -88,4 +88,12 @@ console.log(
 // Write programs that reads the hours and minutes of the 24-hour entered by the user and calculates what the time it will be in 15 minutes. Print the  results in (hours:minutes). The hours are always be between 0 and 23, and the minutes are always between 0 and 59. The hours are written in one digits. minutes are always displayed in two digits, with a landing zero are necessary.
 function time(hours, minutes) {
   minutes += 15;
+  if (minutes > 59) {
+    hours += 1;
+    minutes -= 60;
+  } else if (hours === 24) {
+    hours = 0;
+  }
+  return `${hours}:0${minutes}`;
 }
+console.log(time(23, 59));
