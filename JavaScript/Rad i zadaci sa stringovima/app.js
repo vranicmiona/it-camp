@@ -183,7 +183,7 @@ function nasaFunkcija(rec, znak) {
   return noviString;
 }
 console.log(nasaFunkcija("Recenica sa slovom a.", "a"));
-///////////////////////////////////////////////////////////
+
 // Domaci zadatak:
 // Izdvojiti N znakova sa desne strane (poslednjih N znakova) unetog stringa. Npr. za string 'Pera ima devojku' i N=5, dobija se 'vojku'.
 const task = (recenica10, n) => {
