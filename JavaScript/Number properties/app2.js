@@ -14,7 +14,7 @@ console.log(najveci(2, 5, 5));
 console.log(najveci(-22, -25, -55));
 
 // 2. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
-
+// I NACIN:
 function nearestHundred(int1, int2) {
   let counter1 = 0;
   let counter2 = 0;
@@ -48,8 +48,22 @@ function nearestHundred(int1, int2) {
 }
 console.log(nearestHundred(12, 12)); // jednaki
 console.log(nearestHundred(-1, 400)); // prvi je blizi, daljen za 102
-console.log(nearestHundred(105, 100)); //
-
+console.log(nearestHundred(105, 100));
+// II NACIN:
+const bliziSto = (num1, num2) => {
+  const razlika1 = Math.abs(100 - num1);
+  const razlika2 = Math.abs(100 - num2);
+  const bliziBroj =
+    razlika1 > razlika2 ? num2 : razlika1 < razlika2 ? num1 : null;
+  if (bliziBroj === null) {
+    return `Brojevi su jednako udaljeni od broja 100.`;
+  } else {
+    return `Blizi je broj ${bliziBroj}.`;
+  }
+};
+console.log(nearestHundred(12, 12));
+console.log(nearestHundred(-1, 400));
+console.log(nearestHundred(105, 100));
 // 33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 function firstTask(num1, num2) {
   if (
