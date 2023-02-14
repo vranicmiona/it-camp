@@ -24,7 +24,7 @@ console.log(datum);
 datum = new Date(2022);
 console.log(datum);
 
-// 4. Slanjem Stringa u Date() kao argument. Strin ce biti parsiran i dibicemo datum na osnovu toga.
+// 4. Slanjem Stringa u Date() kao argument. String ce biti parsiran i dibicemo datum na osnovu toga.
 
 datum = new Date("2001 October 24");
 console.log(datum);

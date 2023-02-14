@@ -21,7 +21,7 @@ console.log(Math.SQRT2); //1.4142135623730951
 console.log(Math.SQRT1_2); // 0.7071067811865476
 
 // Math.LN2 vraca nam vrednost logaritma osnove e broja 2
-console.log(Math.LN2);
+console.log(Math.LN2); // 0.693
 
 // Math.LN10 vraca nam vrednost logaritma osnove e za broj 10
 console.log(Math.LN10);
@@ -54,7 +54,7 @@ console.log(Math.floor(76.22)); // 76
 console.log(Math.trunc(234.78)); // 234
 console.log(Math.trunc(78.9)); // 78
 
-// 5. Math.sign(number) - Vraca -1, 0, 1 u zavisnosti od kog je znka broj
+// 5. Math.sign(number) - Vraca -1, 0, 1 u zavisnosti od kog je znaka broj
 console.log(Math.sign(22)); // 1
 console.log(Math.sign(-22)); // -1
 console.log(Math.sign(0)); // 0
@@ -66,7 +66,7 @@ console.log(Math.pow(2, 3)); // 8
 // 7. Math.sqrt(number) - Vraca nam kvadratni koren broja number
 console.log(Math.sqrt(4)); // 2
 
-// 8. Math.abs(number) - Varca absolutnu vrednost broja number
+// 8. Math.abs(number) - Vraca absolutnu vrednost broja number
 console.log(Math.abs(-7)); // 7
 console.log(Math.abs(7)); // 7
 

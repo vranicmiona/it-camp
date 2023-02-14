@@ -54,6 +54,36 @@ if (isNaN(x) || isNaN(y)) {
 } else if (x === y) {
   console.log("Brojevi moraju biti razliciti! ");
 }
+
+let a = +prompt("Unesite neki broj: ");
+let b = +prompt("Unesite drugi broj: ");
+let broji = 0;
+let zbir = 0;
+if (isNaN(a) || isNaN(b)) {
+  console.log("Moraju se uneti brojevi!");
+} else if (a < b) {
+  while (a <= b) {
+    if (a % 5 === 0) {
+      broji++;
+      zbir += a;
+    }
+    a++;
+  }
+  console.log(zbir / broji);
+} else if (a > b) {
+  while (a >= b) {
+    if (b % 5 === 0) {
+      broji++;
+      zbir += b;
+    }
+    b++;
+  }
+  console.log(zbir / broji);
+} else {
+  if (a === b) {
+    console.log("Brojevi su jednaki!");
+  }
+}
 // 2. Nacin:
 
 let broj1 = +prompt("Unesite prvi broj: ");
@@ -102,7 +132,7 @@ if (isNaN(broj1) || isNaN(broj2)) {
   );
 }
 
-// Korisnik unosi broj iz intervala [12,6).
+// Korisnik unosi broj iz intervala [12,6). [] - ukljucujuci; () - neukljucujuci granicu izmedju dva broja
 // Na osnovu unetog broja iteracija se vrsi od njega do 1(ukljucujuci)
 // Ispisati svaki broj iz iteracije, njegov kvadrat i vrednost broja umanjenu za 25
 
@@ -140,12 +170,13 @@ for (let k = 99; k >= -99; k--) {
   }
 }
 // II nacin
-let iterator = 99;
+let iterator = 99; // pocinje se iteracija od broja 99
 while (iterator > -100) {
+  // zavrsava se iteracija kod broja -99
   if (iteratior % 4 === 0) {
     console.log(iterator + 14);
   }
-  iterator--;
+  iterator--; // ide se u minus
 }
 
 // Izracunati aritmeticku sredinu brojeva koji su deljiv sa 3. Iteracija se vrsi od 3 do 17
