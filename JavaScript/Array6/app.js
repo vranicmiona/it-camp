@@ -19,7 +19,7 @@ const niz = [
 const ime = niz.every((element) => element.length >= 5);
 console.log(ime); // true
 
-// some() metoda proverava da li bar jedan element niza zadovoljaa uslov.
+// some() metoda proverava da li bar jedan element niza zadovoljava uslov.
 // some() metoda vraca boolean (logicki entitet koji vraca true ili false);
 
 const isSomeName = niz.some((name) => name.length === 9);
@@ -84,7 +84,23 @@ function removeDuplicates(arr) {
 }
 console.log(removeDuplicates(["Mitar", "miTAr", "Alen", "alen", "aLeN"])); // Mitar, Alen
 
-// We have the following arrays: Go to the editor
+function pomeriDuplikate(arr) {
+  const newArr = [];
+  for (let i of arr) {
+    if (
+      (typeof i === "string" &&
+        newArr.some((element) => element.toLowerCase() === i.toLowerCase())) ||
+      newArr.some((element) => element === i)
+    ) {
+      continue;
+    } else {
+      newArr.push(i);
+    }
+  }
+  return newArr;
+}
+console.log(pomeriDuplikate(["Miona", "MIONA", "Mitar", "MitAR", "miona"]));
+// We have the following arrays:
 color = [
   "Blue",
   "Green",
@@ -107,13 +123,13 @@ o = ["st", "nd", "rd", "th"];
 
 const newArr = color.map((element, index) => {
   if (index === 0) {
-    return "1" + o[index] + "choice is" + element;
+    return "1" + o[index] + " choice is " + element;
   } else if (index === 1) {
-    return "2" + o[index] + "choice is" + element;
+    return "2" + o[index] + " choice is " + element;
   } else if (index === 2) {
-    return "3" + o[index] + "choice is" + element;
+    return "3" + o[index] + " choice is " + element;
   } else {
-    return `${index + 1}` + o[3] + "choice is" + element;
+    return `${index + 1}` + o[3] + " choice is " + element;
   }
 });
 console.log(newArr);

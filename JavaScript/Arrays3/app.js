@@ -1,5 +1,5 @@
 // splice method() je najmocnija alatka kos nizova u JavaScriptu.
-// Omohucava nam promene u nizu na zeljenoj poziciji.
+// Omogucava nam promene u nizu na zeljenoj poziciji.
 // 1. Mozemo dodati (koliko hocemo) elemenata na nekom mestu;
 // 2. Mozemo izbrisati (koliko hocemo) elemenata na nekom mestu;
 const niz = [
@@ -53,6 +53,6 @@ const niz = [
 const skraceniNiz = niz.slice(3, 5);
 console.log(skraceniNiz);
 
-// Izostavljanjem drugog argumenta kod slice metode se uzima ostatak niza.
+// Izostavljanjem drugog argumenta kod slice metode se uzima ostatak niza. Tj. njegovu duzinu (niz.length).
 const skraceniNiz2 = niz.slice(5);
 console.log(skraceniNiz2);

@@ -2,7 +2,7 @@
 // (Primitivni Tipovi Podataka) se cuva u brzom delu memorije "stack" i ima "immutable" vrednosti.
 // (Vrednosni Tipovi Podataka) mogu da sadrze samo jednu vrednost
 
-// 2. Referentni tipovi podataka skladiste dosta vrednosti - cuvaju se u sporijem delu memorije koja se naziva "heap"
+// 2. Referentni tipovi podataka skladiste dosta vrednosti - cuvaju se u sporijem delu memorije koja se naziva "heap", i mogu da se menjaju
 // Neprimitivni Tipovi Podataka
 
 let brojGodina = 26;

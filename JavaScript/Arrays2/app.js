@@ -2,18 +2,18 @@
 // unshift() prikazuje novu duzinu niza. Duzinu nam vracaju one metode koje dodaju element. Pristupanje bilo kojoj vrednosti elementa vrsi se preko indexa.
 
 const niz = ["cetvrtak", "petak", "subota"];
-niz.unshift("sreda"); // moze da se dodaje koliko hocemo elemenata i svis epomeraju za po jedan index
+niz.unshift("sreda"); // moze da se dodaje koliko hocemo elemenata i svi se pomeraju za po jedan index
 console.log(niz);
 console.log(niz.unshift("ponedeljak", "utorak")); // 6 duzina niza
 console.log(niz);
 
-// shift() method brise prvi element i svm ostalim elemntima samnjuje index za 1.
+// shift() method brise prvi element i svim ostalim elemntima samnjuje index za 1.
 
 console.log(niz.shift()); // vraca nam izbrisan element kao kod pop() method.
 console.log(niz);
 
 // delete keyword za brisanje odredjenog elementa unutar niza:
-// Preko delite keyworda mozemo izbrisati bilo koji eement iz niza ali na taj nacin ostavljamo rupe u nizu!!!
+// Preko delite keyworda mozemo izbrisati bilo koji element iz niza ali na taj nacin ostavljamo rupe u nizu!!!
 delete niz[4];
 console.log(niz); // <1 empty item>
 
@@ -41,8 +41,6 @@ const podeliNiz = (niz) => {
   return `Muskarci su ${muskarci},
   devojke su ${devojke}.`;
 };
-console.log(podeliNiz(grupa));
-
 // Napraviti funkciju koja pravi nov niz, koji ce sadrzati samo elemente koji su se nalazili na neparnim pozicijama unutar originalnog niza.
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 // [1, 3, 5, 7, 9, 11, 13]
@@ -54,7 +52,6 @@ const neparnePozicije = (niz) => {
   }
   return neparni;
 };
-console.log(neparnePozicije([1, 3, 5, 7, 9, 11, 13]));
 
 // Domaci:
 // 1. Napraviti funkciju koja pravi novi niz, koji ce sadrzati samo elemente koji su se nalazili na parnim mestima unutar originalnog niza.
@@ -71,7 +68,6 @@ const parnePozicije = (niz) => {
   return parni;
 };
 console.log(parnePozicije([1, 2, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 14]));
-
 // 2. Iz nekog niza izdvojiti sve parne brojeve.(Napraviti novi niz)
 const parniBr = (niz) => {
   const parni = [];

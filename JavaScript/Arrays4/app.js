@@ -5,20 +5,19 @@ console.log(bakir + 1); // 2
 
 const omar =
   niz.indexOf("Omar") === -1 ? "nije dolazio" : niz.indexOf("Omar") + 1;
-// uslov: Omar se naalazi na poziciji 1  // ako nije -1 dobijamo neki drugi broj
+// uslov: Omar se nalazi na poziciji 1  // ako nije -1 dobijamo neki drugi broj
 console.log(omar);
 
 const hatidza = niz.indexOf("Hatidza", 1);
 console.log(hatidza); // -1
 
-// lastIndexOf() metoda vraca poziciju poslednjeg pojavljivanja elementa koji predstavlja argument date metode. Vraca -1 ako se neki element ne nalaziu nizu.
+// lastIndexOf() metoda vraca poziciju poslednjeg pojavljivanja elementa koji predstavlja argument date metode. Vraca -1 ako se neki element ne nalazi u nizu.
 const lastBakir = niz.lastIndexOf("Bakir");
 console.log(lastBakir);
 
 // Array.from() vraca niz, koji se pravi od nekoga objekta koji ima length.
 const noviNiz = Array.from("SVAKO SLOVO CE BITI POSEBAN ELEMENT NIZA");
 console.log(noviNiz);
-const miona = ["lalala ", "cao"];
 
 // includes() metoda vraca Boolean u zavisnosti od toga da li se element nalazi u nizu
 console.log(niz.includes("Emin")); // false

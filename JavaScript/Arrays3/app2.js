@@ -57,6 +57,7 @@ niz.sort((a, b) => b - a);
 console.log(niz);
 
 // 3.
+// I NACIN:
 function minEl(niz) {
   niz.sort((a, b) => b - a);
   return niz[0];
@@ -98,3 +99,6 @@ const najmanji = (niz) => {
   return manji;
 };
 console.log(najmanji(niz));
+
+// III NACIN:
+console.log(Math.min.apply(null, niz));
