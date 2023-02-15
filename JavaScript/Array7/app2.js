@@ -13,7 +13,7 @@ const ispisivanje = (n) => {
 };
 ispisivanje(10);
 
-// Write a JavaScript program which prints the element of the following arrray. Go to editor
+// Write a JavaScript program which prints the element of the following array. Go to editor
 let a = [
   [1, 2, 1, 24],
   [8, 11, 9, 4],

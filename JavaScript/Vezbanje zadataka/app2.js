@@ -82,3 +82,20 @@ function totalPrice(arr) {
   return `You got ${arr.length} in cart, shipping cost is ${shippingCosts}, your total price is ${addShippingCosts}`;
 }
 console.log(totalPrice(CART_DATA)); // 4, 320, 497.5
+
+function konacnaCena(arr) {
+  const newArr = arr.map((element) => {
+    return {
+      name: element.name,
+      totalprice: element.amount * element.price,
+    };
+  });
+  const onlyTotalPrice = newArr.map((element) => element.totalprice);
+  const totalSum = onlyTotalPrice.reduce((prev, curr) => prev + curr);
+  const dodajcenuIsporuke = totalSum + 320;
+  const amount = arr
+    .map((element) => element.amount)
+    .reduce((previous, current) => previous + current);
+  return `You got ${amount} in cart, shipping cost is ${dodajcenuIsporuke}. your total price is ${totalSum}.`;
+}
+console.log(konacnaCena(CART_DATA));
