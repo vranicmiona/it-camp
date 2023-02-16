@@ -14,6 +14,6 @@ const niz = (niz1, niz2) => {
 console.log(
   niz(
     ["casovi", "fakultet", "22", "test", 55, 66],
-    [3, 5, 2, "18", 7, 9, 45, 44, 34]
+    [3, 5, 2, "18", 7, 9, true, 44, 34]
   )
 );
