@@ -5,7 +5,7 @@ const noviNiz = niz.map((element) => element);
 console.log(noviNiz);
 
 // spread operator (...)
-// Pomocu njega klonoramo niz ili objekat
+// Pomocu njega klonoramo niz ili objekat, mogu se dodavati i brisati elemnti i ispred i posle niza ili objekta.
 
 const niz3 = [120, 110, 100, ...niz];
 console.log(niz3); // niz3 == niz
