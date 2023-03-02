@@ -6,7 +6,7 @@ console.log(mySet);
 // Metode Setova:
 // 1. Za kreiranje Setova koristimo new Set([1, 2, 3])
 
-// 2. Za dodavanje lemntata koristimo add() metodu:
+// 2. Za dodavanje elemnta koristimo add() metodu:
 console.log(mySet.add(false));
 
 // 3. Za brisanje elemenata koristimo delete metodu:
