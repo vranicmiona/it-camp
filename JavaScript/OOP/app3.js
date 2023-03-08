@@ -7,6 +7,6 @@ class Course {
   }
 }
 
-const course1 = new Course(2, 4);
+const course1 = new Course("IT Camp", 9, 100);
 console.log(course1.length);
 console.log(course1.title);
