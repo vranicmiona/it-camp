@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="naslov" id="logo"><h1>Items Lister</h1></div>
+      <div class="searchbar">
+        <input type="searchbar" placeholder="  Search Items..." />
+      </div>
+    </header>
+    <br />
+    <div class="main">
+      <div class="prvi">
+        <h1>Add Items</h1>
+        <br />
+        <input type="text" id="input1" />
+        <button type="submit">Submit</button>
+      </div>
+      <div class="drugi">
+        <h1 id="add">Items</h1>
+        <br /><br /><b></b>
+        <div class="ulli">
+          <ul>
+            <li id="prvi">
+              Item1 <button type="close"><i class="fa-solid fa-x"></i></button>
+            </li>
+            <li id="drugi">
+              Item2<button type="close"><i class="fa-solid fa-x"></i></button>
+            </li>
+            <li id="treci">
+              Item3<button type="close"><i class="fa-solid fa-x"></i></button>
+            </li>
+            <li id="cetvrti">
+              Item4<button type="close"><i class="fa-solid fa-x"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
