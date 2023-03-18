@@ -85,7 +85,7 @@ function proveraStringa(text) {
   promise
     .then((poruka) => console.log(poruka))
     .catch((poruka1) => console.log(poruka1));
-  return "Proverili smo string!";
+  // .finally(() => console.log("Proverili smo string!")); // ili return
 }
 
 console.log(proveraStringa("aeiouaeiouaeiouaeo"));
