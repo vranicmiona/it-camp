@@ -118,4 +118,5 @@ newDiv.id = "newId";
 
 container.appendChild(newDiv);
 
-// input2.setAttribute("placeholder", "Unesite vasu email adressu");
+input2.setAttribute("placeholder", "Unesite vasu email adressu");
+console.log(input2.setAttribute("placeholder"));

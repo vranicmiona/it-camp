@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: blueviolet;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.main {
+  margin: 50px auto;
+  padding: 15px;
+  width: 80%;
+  height: 400px;
+  border: 1px solid green;
+  border-radius: 15px;
+}
+
+#subtitle {
+  margin: 20px;
+}
+
+li {
+  list-style: none;
+  border: 1px solid green;
+  padding: 15px;
+}
